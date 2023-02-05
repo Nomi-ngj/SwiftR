@@ -1,0 +1,16 @@
+PODS:
+  - SwiftR (0.14.0)
+
+DEPENDENCIES:
+  - SwiftR
+
+SPEC REPOS:
+  trunk:
+    - SwiftR
+
+SPEC CHECKSUMS:
+  SwiftR: 38aa6ed938f1a57ae030ed99e15455d58e008615
+
+PODFILE CHECKSUM: afddab1bb0222c582a7dc37f59378a9a5490cb3b
+
+COCOAPODS: 1.11.3
