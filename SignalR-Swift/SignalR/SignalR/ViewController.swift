@@ -11,18 +11,25 @@ class ViewController: UIViewController {
 
     let labelTag = 9001
     weak var connectionManager = ConnectionManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let statusLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30))
         statusLabel.tag = labelTag
         self.view.addSubview(statusLabel)
         statusLabel.center = self.view.center
+
+        SwiftSignalRClientManager.shared.connect()
         
-        //Make sure to install pods and set value in OpenTokConfig file
-        // signalRURL = ""
-        // ENVIRONMENT = ""
-        // BEARER = ""
-        connectionManager?.connect()
+//        SignalRSwiftManager.shared.connect()
+//        SignalRSwiftManager.shared.connectionConnected = { connected in
+//            debugPrint(connected)
+//        }
+//        SignalRSwiftManager.shared.connectionStarting = {
+//            debugPrint("connecting")
+//        }
+
+        ConnectionManager.shared.connect()
         handleCallbacks()
         
     }
@@ -30,7 +37,7 @@ class ViewController: UIViewController {
     func handleCallbacks(){
         let label = view.viewWithTag(labelTag) as? UILabel
         
-        connectionManager?.connectedChannel = { connectionType in
+        ConnectionManager.shared.connectedChannel = { connectionType in
             label?.text = "connectedChannel: \(connectionType?.rawValue ?? "")"
             switch connectionType {
             case .channelDisconnect:
@@ -46,7 +53,7 @@ class ViewController: UIViewController {
             }
         }
         
-        connectionManager?.connectedChannelDecodingFailed = { decodingFailure in
+        ConnectionManager.shared.connectedChannelDecodingFailed = { decodingFailure in
             debugPrint(decodingFailure)
         }
         

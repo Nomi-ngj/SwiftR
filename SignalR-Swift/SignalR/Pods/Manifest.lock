@@ -1,16 +1,32 @@
 PODS:
+  - Alamofire (4.9.1)
+  - SignalRSwift (2.0.3):
+    - Alamofire (~> 4.2)
+    - Starscream (~> 3.0)
+  - Starscream (3.1.1)
   - SwiftR (0.14.0)
+  - SwiftSignalRClient (0.9.1)
 
 DEPENDENCIES:
+  - SignalRSwift (= 2.0.3)
   - SwiftR
+  - SwiftSignalRClient
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - SignalRSwift
+    - Starscream
     - SwiftR
+    - SwiftSignalRClient
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SignalRSwift: 6f30893680780d4f4e9981795478ea43f5b63f3e
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftR: 38aa6ed938f1a57ae030ed99e15455d58e008615
+  SwiftSignalRClient: df3a307ef99d4c63392e96786e65035da50652bb
 
-PODFILE CHECKSUM: afddab1bb0222c582a7dc37f59378a9a5490cb3b
+PODFILE CHECKSUM: 7195ec2387b8d603b057c833e2a5e108c23ba560
 
 COCOAPODS: 1.11.3

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6B9217299BD52B00D69DFD /* SignalRSwiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B9216299BD52B00D69DFD /* SignalRSwiftManager.swift */; };
+		8C6B921B299BDEBC00D69DFD /* SwiftSignalRClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B921A299BDEBC00D69DFD /* SwiftSignalRClientManager.swift */; };
 		8CF7440F298F9CAC00DAD88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7440E298F9CAC00DAD88E /* AppDelegate.swift */; };
 		8CF74411298F9CAC00DAD88E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF74410298F9CAC00DAD88E /* SceneDelegate.swift */; };
 		8CF74413298F9CAC00DAD88E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF74412298F9CAC00DAD88E /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		0812B86D155BA98F65667700 /* Pods_SignalR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5498B0F958B136C7B3C145F0 /* Pods-SignalR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalR.debug.xcconfig"; path = "Target Support Files/Pods-SignalR/Pods-SignalR.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6B9216299BD52B00D69DFD /* SignalRSwiftManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalRSwiftManager.swift; sourceTree = "<group>"; };
+		8C6B921A299BDEBC00D69DFD /* SwiftSignalRClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSignalRClientManager.swift; sourceTree = "<group>"; };
 		8CF7440B298F9CAC00DAD88E /* SignalR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7440E298F9CAC00DAD88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF74410298F9CAC00DAD88E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,42 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8C6B9214299BD37300D69DFD /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				8CF74425298F9F7D00DAD88E /* ConnectionCallbacks.swift */,
+				8CF74426298F9F7D00DAD88E /* ConnectionConstants.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		8C6B9215299BD3E700D69DFD /* SocketClient */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B9214299BD37300D69DFD /* Basics */,
+				8C6B9218299BD53500D69DFD /* SignalRSwift */,
+				8CF7442D298FA35100DAD88E /* SwiftR */,
+				8C6B9219299BDE9B00D69DFD /* SwiftSignalRClient */,
+			);
+			path = SocketClient;
+			sourceTree = "<group>";
+		};
+		8C6B9218299BD53500D69DFD /* SignalRSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B9216299BD52B00D69DFD /* SignalRSwiftManager.swift */,
+			);
+			path = SignalRSwift;
+			sourceTree = "<group>";
+		};
+		8C6B9219299BDE9B00D69DFD /* SwiftSignalRClient */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B921A299BDEBC00D69DFD /* SwiftSignalRClientManager.swift */,
+			);
+			path = SwiftSignalRClient;
+			sourceTree = "<group>";
+		};
 		8CF74402298F9CAC00DAD88E = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +126,7 @@
 		8CF7440D298F9CAC00DAD88E /* SignalR */ = {
 			isa = PBXGroup;
 			children = (
-				8CF7442D298FA35100DAD88E /* SwiftRManager */,
+				8C6B9215299BD3E700D69DFD /* SocketClient */,
 				8CF7440E298F9CAC00DAD88E /* AppDelegate.swift */,
 				8CF74410298F9CAC00DAD88E /* SceneDelegate.swift */,
 				8CF74412298F9CAC00DAD88E /* ViewController.swift */,
@@ -98,14 +138,12 @@
 			path = SignalR;
 			sourceTree = "<group>";
 		};
-		8CF7442D298FA35100DAD88E /* SwiftRManager */ = {
+		8CF7442D298FA35100DAD88E /* SwiftR */ = {
 			isa = PBXGroup;
 			children = (
-				8CF74425298F9F7D00DAD88E /* ConnectionCallbacks.swift */,
 				8CF74423298F9F7D00DAD88E /* ConnectionManager.swift */,
-				8CF74426298F9F7D00DAD88E /* ConnectionConstants.swift */,
 			);
-			path = SwiftRManager;
+			path = SwiftR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF74413298F9CAC00DAD88E /* ViewController.swift in Sources */,
+				8C6B921B299BDEBC00D69DFD /* SwiftSignalRClientManager.swift in Sources */,
+				8C6B9217299BD52B00D69DFD /* SignalRSwiftManager.swift in Sources */,
 				8CF74428298F9F7D00DAD88E /* ConnectionManager.swift in Sources */,
 				8CF7442A298F9F7D00DAD88E /* ConnectionCallbacks.swift in Sources */,
 				8CF7440F298F9CAC00DAD88E /* AppDelegate.swift in Sources */,
