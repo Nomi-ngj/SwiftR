@@ -8,6 +8,6 @@ target 'SignalR' do
   # Pods for SignalR
 
   pod 'SwiftR'
-  pod 'SignalRSwift', '2.0.3'
+  pod 'SignalRSwift'
   pod 'SwiftSignalRClient'
 end

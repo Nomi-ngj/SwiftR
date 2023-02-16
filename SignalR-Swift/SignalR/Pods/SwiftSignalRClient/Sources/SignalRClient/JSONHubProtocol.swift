@@ -27,7 +27,7 @@ public class JSONHubProtocol: HubProtocol {
 
     public func parseMessages(input: Data) throws -> [HubMessage] {
         let payloads = input.split(separator: JSONHubProtocol.recordSeparator)
-        // do not try to parse the last payload if it is not terminated with record separator
+        // do not try to parse the last payload if it is not terminated with record sparator
         var count = payloads.count
         if count > 0 && input.last != JSONHubProtocol.recordSeparator {
             logger.log(logLevel: .warning, message: "Partial message received. Here be dragons...")
@@ -89,16 +89,10 @@ public class JSONHubProtocol: HubProtocol {
         switch message.type {
         case .Invocation:
             return try encoder.encode(message as! ServerInvocationMessage)
-        case .StreamItem:
-            return try encoder.encode(message as! StreamItemMessage)
         case .StreamInvocation:
             return try encoder.encode(message as! StreamInvocationMessage)
         case .CancelInvocation:
             return try encoder.encode(message as! CancelInvocationMessage)
-        case .Completion:
-            return try encoder.encode(message as! CompletionMessage)
-        case .Ping:
-            return try encoder.encode(message as! PingMessage)
         default:
             throw SignalRError.invalidOperation(message: "Unexpected MessageType.")
         }

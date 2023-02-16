@@ -9,8 +9,7 @@
 import Foundation
 
 /**
-`HubConnection` is the client for interacting with SignalR server. It allows invoking server side hub methods and register handlers for client side methods
- that can be invoked from the server.
+`HubConnection` is the client for interacting with SignalR server. It allows invoking server side hub methods and register handlers for client side methods that can be invoked from the server.
 
  - note: You need to maintain the reference to the `HubConnection` instance until the connection is stopped
  */
@@ -27,11 +26,6 @@ public class HubConnection {
     private var connectionDelegate: HubConnectionConnectionDelegate?
     private var hubProtocol: HubProtocol
 
-    private let keepAliveIntervalInSeconds: Double?
-    private var keepAlivePingTask: DispatchWorkItem?
-
-    private let callbackQueue: DispatchQueue
-
     /**
     Allows setting a delegate that will be notified about connection lifecycle events
 
@@ -40,8 +34,7 @@ public class HubConnection {
     public weak var delegate: HubConnectionDelegate?
     
     /**
-     Gets the connections connectionId. This value will be cleared when the connection is stopped and will have a new value every time the connection is
-     successfully started.
+     Gets the connections connectionId. This value will be cleared when the connection is stopped and will have a new value every time the connection is successfully started.
      */
     public var connectionId: String? {
         return connection.connectionId
@@ -54,16 +47,10 @@ public class HubConnection {
      - parameter hubProtocol: `HubProtocol` to use to communicate with the server
      - parameter logger: optional logger to write logs. If not provided no log will be written
      */
-    convenience public init(connection: Connection, hubProtocol: HubProtocol, logger: Logger = NullLogger()) {
-        self.init(connection: connection, hubProtocol: hubProtocol, hubConnectionOptions: HubConnectionOptions(), logger: logger)
-    }
-
-    public init(connection: Connection, hubProtocol: HubProtocol, hubConnectionOptions: HubConnectionOptions, logger: Logger = NullLogger()) {
+    public init(connection: Connection, hubProtocol: HubProtocol, logger: Logger = NullLogger()) {
         logger.log(logLevel: .debug, message: "HubConnection init")
         self.connection = connection
         self.hubProtocol = hubProtocol
-        self.keepAliveIntervalInSeconds = hubConnectionOptions.keepAliveInterval
-        self.callbackQueue = hubConnectionOptions.callbackQueue
         self.logger = logger
         self.hubConnectionQueue = DispatchQueue(label: "SignalR.hubconnection.queue")
     }
@@ -86,7 +73,7 @@ public class HubConnection {
 
     fileprivate func initiateHandshake() {
         logger.log(logLevel: .info, message: "Hub connection started")
-        // TODO: support custom protocols
+        // TODO: support custom protcols
         // TODO: add negative test (e.g. invalid protocol)
         let handshakeRequest = HandshakeProtocol.createHandshakeRequest(hubProtocol: hubProtocol)
         logger.log(logLevel: .debug, message: "Sending handshake request: \(handshakeRequest)")
@@ -133,52 +120,35 @@ public class HubConnection {
     /**
      Invokes a server side hub method in a fire-and-forget manner.
 
-     When a hub method is invoked in a fire-and-forget manner the client never receives any result of the invocation nor is notified about the invocation
-     status.
+     When a hub method is invoked in a fire-and-forget manner the client never receives any result of the invocation nor is notified about the invocation status.
 
      - parameter method: the name of the server side hub method to invoke
      - parameter arguments: hub method arguments
-     - parameter sendDidComplete: a completion handler that allows to track whether the client was able to successfully initiate the invocation. If the
-                                  invocation was successfully initiated the `error` will be `nil`. Otherwise the `error` will contain failure details
+     - parameter sendDidComplete: a completion handler that allows to track whether the client was able to successfully initiate the invocation. If the invocation was successfully initiated the `error` will be `nil`. Otherwise the `error` will contain failure details
      - parameter error: contains failure details if the invocation was not initiated successfully. `nil` otherwise
      - note: Consider using typed `.send()` extension methods defined on the `HubConnectionExtensions` class.
      */
     public func send(method: String, arguments:[Encodable], sendDidComplete: @escaping (_ error: Error?) -> Void) {
         logger.log(logLevel: .info, message: "Sending to server side hub method: '\(method)'")
 
-        guard ensureConnectionStarted(errorHandler: {sendDidComplete($0)}) else {
-            logger.log(logLevel: .warning, message: "Sending to server side hub method '\(method)' failed, connection not started")
+        if !ensureConnectionStarted(errorHandler: {sendDidComplete($0)}) {
             return
         }
 
         do {
-            let invocationMessage = ServerInvocationMessage(target: method, arguments: arguments, streamIds: [])
+            let invocationMessage = ServerInvocationMessage(target: method, arguments: arguments)
             let invocationData = try hubProtocol.writeMessage(message: invocationMessage)
-            resetKeepAlive()
-
-            connection.send(data: invocationData, sendDidComplete: { error in
-                if error == nil {
-                    self.resetKeepAlive()
-                }
-                self.callbackQueue.async {
-                    sendDidComplete(error)
-                }
-            })
+            connection.send(data: invocationData, sendDidComplete: sendDidComplete)
         } catch {
             logger.log(logLevel: .error, message: "Sending to server side hub method '\(method)' failed. Error: \(error)")
-            self.callbackQueue.async {
-                sendDidComplete(error)
-            }
+            sendDidComplete(error)
         }
     }
 
     /**
      Invokes a server side hub method that does not return a result.
 
-     The `invoke` method invokes a server side hub method and returns the status of the invocation. The `error` parameter of the `invocationDidComplete`
-     callback will be `nil` if the invocation was successful. Otherwise it will contain failure details. Note that the failure can be local - e.g. the
-     invocation was not initiated successfully (for example the connection was not connected when invoking the method), or remote - e.g. the hub method on the
-     server side threw an exception.
+     The `invoke` method invokes a server side hub method and returns the status of the invocation. The `error` parameter of the `invocationDidComplete` callback will be `nil` if the invocation was successful. Otherwise it will contain failue details. Note that the failure can be local - e.g. the invocation was not initiated successfully (for example the connection was not connected when invoking the method), or remote - e.g. the hub method on the server side threw an exception.
 
      - parameter method: the name of the server side hub method to invoke
      - parameter arguments: hub method arguments
@@ -195,10 +165,7 @@ public class HubConnection {
     /**
      Invokes a server side hub method that returns a result.
 
-     The `invoke` method invokes a server side hub method and returns the result of the invocation or error. If the server side method completed successfully
-     the `invocationDidComplete` callback will be called with the result returned by the method and `nil` error. Otherwise the `error` parameter of the
-     `invocationDidComplete` callback will contain failure details. Note that the failure can be local - e.g. the invocation was not initiated successfully
-     (for example the connection was not started when invoking the method), or remote - e.g. the hub method threw an error.
+     The `invoke` method invokes a server side hub method and returns the result of the invocation or error. If the server side method completed successfully the `invocationDidComplete` callback will be called with the result returned by the method and `nil` error. Otherwise the `error` parameter of the `invocationDidComplete` callback will contain failure details. Note that the failure can be local - e.g. the invocation was not initiated successfully (for example the connection was not started when invoking the method), or remote - e.g. the hub method threw an error.
 
      - parameter method: the name of the server side hub method to invoke
      - parameter arguments: hub method arguments
@@ -215,7 +182,7 @@ public class HubConnection {
             return
         }
 
-        let invocationHandler = InvocationHandler<T>(logger: logger, callbackQueue: callbackQueue, invocationDidComplete: invocationDidComplete)
+        let invocationHandler = InvocationHandler<T>(logger: logger, invocationDidComplete: invocationDidComplete)
 
         _ = invoke(invocationHandler: invocationHandler, method: method, arguments: arguments)
     }
@@ -225,10 +192,7 @@ public class HubConnection {
 
      The `stream` method invokes a streaming server side hub method. It takes two callbacks
      - `streamItemReceived` - invoked each time a stream item is received
-     - `invocationDidComplete` - invoked when the invocation of the streaming method has completed. If the streaming method completed successfully or was
-                                 cancelled the callback will be called with `nil` error. Otherwise the `error` parameter of the `invocationDidComplete`
-                                 callback will contain failure details. Note that the failure can be local - e.g. the invocation was not initiated successfully
-                                 (for example the connection was not started when invoking the method), or remote - e.g. the hub method threw an error.
+     - `invocationDidComplete` - invoked when the invocation of the streaming method has completed. If the streaming method completed successfully or was cancelled the callback will be called with `nil` error. Otherwise the `error` parameter of the `invocationDidComplete` callback will contain failure details. Note that the failure can be local - e.g. the invocation was not initiated successfully (for example the connection was not started when invoking the method), or remote - e.g. the hub method threw an error.
 
      - parameter method: the name of the server side hub method to invoke
      - parameter arguments: hub method arguments
@@ -249,7 +213,7 @@ public class HubConnection {
             return StreamHandle(invocationId: "")
         }
 
-        let streamInvocationHandler = StreamInvocationHandler<T>(logger: logger, callbackQueue: callbackQueue, streamItemReceived: streamItemReceived, invocationDidComplete: invocationDidComplete)
+        let streamInvocationHandler = StreamInvocationHandler<T>(logger: logger, streamItemReceived: streamItemReceived, invocationDidComplete: invocationDidComplete)
 
         let id = invoke(invocationHandler: streamInvocationHandler, method: method, arguments: arguments)
 
@@ -272,9 +236,7 @@ public class HubConnection {
 
         if streamHandle.invocationId == "" {
             logger.log(logLevel: .error, message: "Invalid stream handle")
-            callbackQueue.async {
-                cancelDidFail(SignalRError.invalidOperation(message: "Invalid stream handle."))
-            }
+            cancelDidFail(SignalRError.invalidOperation(message: "Invalid stream handle."))
             return
         }
 
@@ -284,18 +246,12 @@ public class HubConnection {
             connection.send(data: cancelInvocationData, sendDidComplete: {error in
                 if let e = error {
                     self.logger.log(logLevel: .error, message: "Sending cancellation of server side streaming hub returned error: \(e)")
-                    self.callbackQueue.async {
-                        cancelDidFail(e)
-                    }
-                } else {
-                    self.resetKeepAlive()
+                    cancelDidFail(e)
                 }
             })
         } catch {
             logger.log(logLevel: .error, message: "Sending cancellation of server side streaming hub method failed: \(error)")
-            self.callbackQueue.async {
-                cancelDidFail(error)
-            }
+            cancelDidFail(error)
         }
     }
 
@@ -309,15 +265,13 @@ public class HubConnection {
         }
 
         do {
-            let invocationMessage = invocationHandler.createInvocationMessage(invocationId: id, method: method, arguments: arguments, streamIds: [])
+            let invocationMessage = invocationHandler.createInvocationMessage(invocationId: id, method: method, arguments: arguments)
             let invocationData = try hubProtocol.writeMessage(message: invocationMessage)
 
             connection.send(data: invocationData) { error in
                 if let e = error {
                     self.logger.log(logLevel: .error, message: "Invoking server hub method \(method) returned error: \(e)")
                     self.failInvocationWithError(invocationHandler: invocationHandler, invocationId: id, error: e)
-                } else {
-                    self.resetKeepAlive()
                 }
             }
         } catch {
@@ -333,17 +287,15 @@ public class HubConnection {
             _ = pendingCalls.removeValue(forKey: invocationId)
         }
 
-        callbackQueue.async {
+        Util.dispatchToMainThread {
             invocationHandler.raiseError(error: error)
         }
     }
 
-    private func ensureConnectionStarted(errorHandler: @escaping (Error)->Void) -> Bool {
-        guard handshakeStatus.isHandled else {
+    private func ensureConnectionStarted(errorHandler: (Error)->Void) -> Bool {
+        if !handshakeStatus.isHandled {
             logger.log(logLevel: .error, message: "Attempting to send data before connection has been started.")
-            callbackQueue.async {
-                errorHandler(SignalRError.invalidOperation(message: "Attempting to send data before connection has been started."))
-            }
+            errorHandler(SignalRError.invalidOperation(message: "Attempting to send data before connection has been started."))
             return false
         }
         return true
@@ -351,7 +303,6 @@ public class HubConnection {
 
     fileprivate func connectionDidReceiveData(data: Data) {
         logger.log(logLevel: .debug, message: "Data received")
-
         var data = data
         if !handshakeStatus.isHandled {
             logger.log(logLevel: .debug, message: "Processing handshake response: \(String(data: data, encoding: .utf8) ?? "(invalid)")")
@@ -359,28 +310,19 @@ public class HubConnection {
             data = remainingData
             let originalHandshakeStatus = handshakeStatus
             handshakeStatus = .handled
-            keepAlivePingTask = DispatchWorkItem{}
             if let e = error {
                 // TODO: (BUG) if this fails when reconnecting the callback should not be called and there
                 // will be no further reconnect attempts
                 logger.log(logLevel: .error, message: "Parsing handshake response failed: \(e)")
-                callbackQueue.async {
-                    self.delegate?.connectionDidFailToOpen(error: e)
-                }
+                delegate?.connectionDidFailToOpen(error: e)
                 return
             }
             if originalHandshakeStatus.isReconnect {
-                callbackQueue.async {
-                    self.delegate?.connectionDidReconnect()
-                }
+                delegate?.connectionDidReconnect()
             } else {
-                callbackQueue.async {
-                    self.delegate?.connectionDidOpen(hubConnection: self)
-                }
-                resetKeepAlive()
+                delegate?.connectionDidOpen(hubConnection: self)
             }
         }
-
         do {
             let messages = try hubProtocol.parseMessages(input: data)
             for incomingMessage in messages {
@@ -397,7 +339,7 @@ public class HubConnection {
                     // no action required for ping messages
                     break
                 default:
-                    logger.log(logLevel: .error, message: "Unsupported message type: \(incomingMessage.type.rawValue)")
+                    logger.log(logLevel: .error, message: "Usupported message type: \(incomingMessage.type.rawValue)")
                 }
             }
         } catch {
@@ -412,7 +354,7 @@ public class HubConnection {
         }
 
         if serverInvocationHandler != nil {
-            callbackQueue.async {
+            Util.dispatchToMainThread {
                 serverInvocationHandler!.processCompletion(completionMessage: message)
             }
         } else {
@@ -427,9 +369,11 @@ public class HubConnection {
         }
 
         if serverInvocationHandler != nil {
-            if let error = serverInvocationHandler!.processStreamItem(streamItemMessage: message) {
-                logger.log(logLevel: .error, message: "Processing stream item failed: \(error)")
-                failInvocationWithError(invocationHandler: serverInvocationHandler!, invocationId: message.invocationId, error: error)
+            Util.dispatchToMainThread {
+                if let error = serverInvocationHandler!.processStreamItem(streamItemMessage: message) {
+                    self.logger.log(logLevel: .error, message: "Processing stream item failed: \(error)")
+                    self.failInvocationWithError(invocationHandler: serverInvocationHandler!, invocationId: message.invocationId, error: error)
+                }
             }
         } else {
             logger.log(logLevel: .error, message: "Could not find callback with id \(message.invocationId)")
@@ -444,7 +388,7 @@ public class HubConnection {
         }
 
         if callback != nil {
-            callbackQueue.async {
+            Util.dispatchToMainThread {
                 do {
                     try callback!(ArgumentExtractor(clientInvocationMessage: message))
                 } catch {
@@ -459,10 +403,6 @@ public class HubConnection {
     fileprivate func connectionDidClose(error: Error?) {
         logger.log(logLevel: .info, message: "HubConnection closing with error: \(String(describing: error))")
 
-        hubConnectionQueue.sync {
-            cleanUpKeepAlive()
-        }
-
         var invocationHandlers: [ServerInvocationHandler] = []
         hubConnectionQueue.sync {
             invocationHandlers = [ServerInvocationHandler](pendingCalls.values)
@@ -472,85 +412,25 @@ public class HubConnection {
         logger.log(logLevel: .info, message: "Terminating \(invocationHandlers.count) pending hub methods")
         let invocationError = error ?? SignalRError.hubInvocationCancelled
         for serverInvocationHandler in invocationHandlers {
-            serverInvocationHandler.raiseError(error: invocationError)
+            Util.dispatchToMainThread {
+                serverInvocationHandler.raiseError(error: invocationError)
+            }
         }
         handshakeStatus = .needsHandling(false)
-        callbackQueue.async {
-            self.delegate?.connectionDidClose(error: error)
-        }
+        delegate?.connectionDidClose(error: error)
     }
 
     fileprivate func connectionDidFailToOpen(error: Error) {
-        callbackQueue.async {
-            self.delegate?.connectionDidFailToOpen(error: error)
-        }
+        delegate?.connectionDidFailToOpen(error: error)
     }
 
     fileprivate func connectionWillReconnect(error: Error) {
         handshakeStatus = .needsHandling(true)
-        callbackQueue.async {
-            self.delegate?.connectionWillReconnect(error: error)
-        }
+        delegate?.connectionWillReconnect(error: error)
     }
 
     fileprivate func connectionDidReconnect() {
         initiateHandshake()
-    }
-
-    private func resetKeepAlive() {
-        if connection.inherentKeepAlive {
-            logger.log(logLevel: .debug, message: "Not scheduling sending keep alive - inherent keep alive")
-            return
-        }
-
-        guard let keepAliveInterval = keepAliveIntervalInSeconds else {
-            logger.log(logLevel: .debug, message: "Not scheduling sending keep alive - keep alive disabled")
-            return
-        }
-
-        hubConnectionQueue.sync {
-            guard keepAlivePingTask != nil else {
-                logger.log(logLevel: .debug, message: "Connection stopped - ignore keep alive reset")
-                return
-            }
-            logger.log(logLevel: .debug, message: "Resetting keep alive")
-            keepAlivePingTask!.cancel()
-            keepAlivePingTask = DispatchWorkItem { self.sendKeepAlivePing() }
-            hubConnectionQueue.asyncAfter(deadline: DispatchTime.now() + keepAliveInterval, execute: keepAlivePingTask!)
-        }
-    }
-
-    private func sendKeepAlivePing() {
-        logger.log(logLevel: .debug, message: "Send keep alive called")
-        guard handshakeStatus.isHandled else {
-            logger.log(logLevel: .debug, message: "Send keep alive called but not connected")
-            cleanUpKeepAlive()
-            return
-        }
-
-        do {
-            let cachedPingMessage = try hubProtocol.writeMessage(message: PingMessage.instance)
-            logger.log(logLevel: .debug, message: "Sending keep alive")
-            connection.send(data: cachedPingMessage, sendDidComplete: { error in
-                if let error = error {
-                    self.logger.log(logLevel: .error, message: "Keep alive send error:  \(error.localizedDescription)")
-                } else {
-                    self.logger.log(logLevel: .debug, message: "Keep alive sent successfully")
-                }
-                self.resetKeepAlive()
-            })
-        } catch {
-            // We don't care about the error. It should be seen elsewhere in the client.
-            // The connection is probably in a bad or closed state now, cancel the timer but not set the task to nil to allow to continue to trigger in case this
-            logger.log(logLevel: .error, message: "Couldn't write keep alive message \(error.localizedDescription)")
-            keepAlivePingTask?.cancel()
-        }
-    }
-
-    private func cleanUpKeepAlive() {
-        //Note: needs to be run on hubConnectionQueue to avoid races
-        keepAlivePingTask?.cancel()
-        keepAlivePingTask = nil
     }
 }
 
@@ -614,7 +494,7 @@ public class ArgumentExtractor {
     }
 
     /**
-     Checks if there are more arguments to retrieve.
+     Allows to check if there are more arguments to retrieve.
 
      - returns: `true` if there are more arguments to retrieve. `false` otherwise
      */

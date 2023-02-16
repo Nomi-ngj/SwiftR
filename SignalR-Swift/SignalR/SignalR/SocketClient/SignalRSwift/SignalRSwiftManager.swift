@@ -18,7 +18,6 @@ class SignalRSwiftManager  {
     static let shared = SignalRSwiftManager()
     private init() {}
    
-    
     func connect(){
         let headers = ["Authorization":ConnectionConstants.Config.BEARER]
         connection = HubConnection(withUrl: ConnectionConstants.Config.signalRURL,queryString: headers)

@@ -25,9 +25,6 @@ public class HttpConnection: Connection {
 
     public weak var delegate: ConnectionDelegate?
     public private(set) var connectionId: String?
-    public var inherentKeepAlive: Bool {
-        return transport?.inherentKeepAlive ?? true
-    }
 
     private enum State: String {
         case initial = "initial"
@@ -153,9 +150,7 @@ public class HttpConnection: Connection {
 
     private func createNegotiateUrl() -> URL {
         var urlComponents = URLComponents(url: self.url, resolvingAgainstBaseURL: false)!
-        var queryItems = (urlComponents.queryItems ?? []) as [URLQueryItem]
-        queryItems.append(URLQueryItem(name: "negotiateVersion", value: "1"))
-        urlComponents.queryItems = queryItems
+        urlComponents.queryItems = [URLQueryItem(name: "negotiateVersion", value: "1")]
         var negotiateUrl = urlComponents.url!
         negotiateUrl.appendPathComponent("negotiate")
         return negotiateUrl
@@ -183,20 +178,16 @@ public class HttpConnection: Connection {
         }
 
         logger.log(logLevel: .debug, message: "Invoking connectionDidFailToOpen")
-        options.callbackQueue.async {
+        Util.dispatchToMainThread {
             self.delegate?.connectionDidFailToOpen(error: error)
         }
     }
 
     public func send(data: Data, sendDidComplete: @escaping (_ error: Error?) -> Void) {
         logger.log(logLevel: .debug, message: "Sending data")
-        guard state == .connected else {
+        if state != .connected {
             logger.log(logLevel: .error, message: "Sending data failed - connection not in the 'connected' state")
-
-            // Never synchronously respond to avoid upstream deadlocks based on async assumptions
-            options.callbackQueue.async {
-                sendDidComplete(SignalRError.invalidState)
-            }
+            sendDidComplete(SignalRError.invalidState)
             return
         }
         transport!.send(data: data, sendDidComplete: sendDidComplete)
@@ -226,7 +217,7 @@ public class HttpConnection: Connection {
         } else {
             logger.log(logLevel: .debug, message: "Connection being stopped before transport initialized")
             logger.log(logLevel: .debug, message: "Invoking connectionDidClose (\(#function): \(#line))")
-            options.callbackQueue.async {
+            Util.dispatchToMainThread {
                 self.delegate?.connectionDidClose(error: stopError)
             }
         }
@@ -242,7 +233,7 @@ public class HttpConnection: Connection {
         if  previousState != nil {
             logger.log(logLevel: .debug, message: "Invoking connectionDidOpen")
             self.connectionId = connectionId
-            options.callbackQueue.async {
+            Util.dispatchToMainThread {
                 self.delegate?.connectionDidOpen(connection: self)
             }
         } else {
@@ -252,7 +243,7 @@ public class HttpConnection: Connection {
 
     fileprivate func transportDidReceiveData(_ data: Data) {
         logger.log(logLevel: .debug, message: "Received data from transport")
-        options.callbackQueue.async {
+        Util.dispatchToMainThread {
             self.delegate?.connectionDidReceiveData(connection: self, data: data)
         }
     }
@@ -269,7 +260,7 @@ public class HttpConnection: Connection {
             startDispatchGroup.leave()
 
             logger.log(logLevel: .debug, message: "Invoking connectionDidFailToOpen")
-            options.callbackQueue.async {
+            Util.dispatchToMainThread {
                 self.delegate?.connectionDidFailToOpen(error: self.stopError ?? error!)
             }
         } else {
@@ -277,7 +268,7 @@ public class HttpConnection: Connection {
 
             self.connectionId = nil
 
-            options.callbackQueue.async {
+            Util.dispatchToMainThread {
                 self.delegate?.connectionDidClose(error: self.stopError ?? error)
             }
         }
@@ -286,7 +277,7 @@ public class HttpConnection: Connection {
     private func changeState(from: State?, to: State) -> State? {
         var previousState: State? = nil
 
-        logger.log(logLevel: .debug, message: "Attempting to change state from: '\(from?.rawValue ?? "(nil)")' to: '\(to)'")
+        logger.log(logLevel: .debug, message: "Attempting to chage state from: '\(from?.rawValue ?? "(nil)")' to: '\(to)'")
         connectionQueue.sync {
             if from == nil || from == state {
                 previousState = state

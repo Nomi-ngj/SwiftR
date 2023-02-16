@@ -18,6 +18,38 @@
             endingLineNumber = "62"
             landmarkName = "handleCallbacks()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BA737AD-061A-4D2B-8FEA-CEE27480BEAA - e6e227d4dc05d4a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in SignalR.ViewController.handleCallbacks() -&gt; ()"
+                  moduleName = "SignalR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noumanguljunejo/SignalR/SignalR-Swift/SignalR/SignalR/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "4BA737AD-061A-4D2B-8FEA-CEE27480BEAA - e6e227d4dc05d4a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in SignalR.ViewController.handleCallbacks() -&gt; ()"
+                  moduleName = "SignalR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noumanguljunejo/SignalR/SignalR-Swift/SignalR/SignalR/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,8 +62,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "connect()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +78,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +94,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +110,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +126,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +142,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +158,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,24 +174,8 @@
             filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "signalREvents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C26F1FC6-BD6B-4CB5-8208-AE4115473AC3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SignalR/SocketClient/SignalRSwift/SignalRSwiftManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "signalREvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -209,22 +225,6 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "removeCallback(callbackId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D923A592-B149-436F-AF5C-6F4802B399E6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/SignalRSwift/SignalR-Swift/Client/Hubs/HubConnection.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "getUrl(url:useDefault:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -305,6 +305,38 @@
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "connectionDidClose(error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42083246-C7DD-4151-9687-25EC9525F76C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignalR/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F515EA2-7208-4FA6-A621-520DFC26338A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignalR/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

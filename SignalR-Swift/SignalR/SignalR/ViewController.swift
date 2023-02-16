@@ -19,18 +19,18 @@ class ViewController: UIViewController {
         self.view.addSubview(statusLabel)
         statusLabel.center = self.view.center
 
-        SwiftSignalRClientManager.shared.connect()
+//        SwiftSignalRClientManager.shared.connect()
         
-//        SignalRSwiftManager.shared.connect()
-//        SignalRSwiftManager.shared.connectionConnected = { connected in
-//            debugPrint(connected)
-//        }
-//        SignalRSwiftManager.shared.connectionStarting = {
-//            debugPrint("connecting")
-//        }
+        SignalRSwiftManager.shared.connect()
+        SignalRSwiftManager.shared.connectionConnected = { connected in
+            debugPrint(connected)
+        }
+        SignalRSwiftManager.shared.connectionStarting = {
+            debugPrint("connecting")
+        }
 
-        ConnectionManager.shared.connect()
-        handleCallbacks()
+//        ConnectionManager.shared.connect()
+//        handleCallbacks()
         
     }
     

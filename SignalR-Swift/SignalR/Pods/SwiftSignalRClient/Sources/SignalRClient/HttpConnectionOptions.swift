@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-HttpConnection configuration options.
+
  */
 public class HttpConnectionOptions {
     /**
@@ -20,8 +20,7 @@ public class HttpConnectionOptions {
     /**
      A factory for creating access tokens that will be included in HTTP requests sent by the client.
 
-     - note: the factory will be called before each http request and will set the `Authorization` token value to: `Bearer {token-returned-by-factory}` unless
-             the returned value is `nil` in which case the `Authorization` header will not be created
+     - note: the factory will be called before each http request and will set the `Authorization` token value to: `Bearer {token-returned-by-factory}` unless the returned value is `nil` in which case the `Authorization` header will not be created
     */
     public var accessTokenProvider: () -> String? = { return nil }
 
@@ -35,26 +34,13 @@ public class HttpConnectionOptions {
 
      - note: the negotiation request can be skipped only when using the WebSockets transport and cannot be skipped when connecting to SignalR Azure Service
     */
-    public var skipNegotiation: Bool {
-        get { return skipNegotiationValue }
-        
-        @available(OSX 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
-        set { skipNegotiationValue = newValue }
-    }
-    private var skipNegotiationValue = false
+    public var skipNegotiation: Bool = false
 
     /**
     The timeout value for individual requests, in seconds.
      */
     public var requestTimeout: TimeInterval = 120
     
-    public var authenticationChallengeHandler: ((_ session: URLSession, _ challenge: URLAuthenticationChallenge, _ completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) -> Void)?
-
-    /**
-    The queue to run callbacks on
-     */
-    public var callbackQueue: DispatchQueue = DispatchQueue(label: "SignalR.connection.callbackQueue")
-
     /**
      Initializes an `HttpConnectionOptions`.
      */

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol TransportDelegate: AnyObject {
+public protocol TransportDelegate: class {
     func transportDidOpen() -> Void
     func transportDidReceiveData(_ data: Data) -> Void
     func transportDidClose(_ error: Error?) -> Void

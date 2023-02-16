@@ -33,10 +33,6 @@ internal class ReconnectableConnection: Connection {
         return underlyingConnection.connectionId
     }
 
-    var inherentKeepAlive: Bool {
-        return underlyingConnection.inherentKeepAlive
-    }
-
     init(connectionFactory: @escaping () -> Connection, reconnectPolicy: ReconnectPolicy, logger: Logger) {
         self.connectionFactory = connectionFactory
         self.reconnectPolicy = reconnectPolicy
@@ -94,7 +90,7 @@ internal class ReconnectableConnection: Connection {
 
         logger.log(logLevel: .debug, message: {
             let initialStates = from?.map{$0.rawValue}.joined(separator: ", ") ?? "(nil)"
-            return "Attempting to change state from: '\(initialStates)' to: '\(to)'"
+            return "Attempting to chage state from: '\(initialStates)' to: '\(to)'"
         }())
         connectionQueue.sync {
             if from?.contains(self.state) ?? true {
@@ -115,12 +111,11 @@ internal class ReconnectableConnection: Connection {
             logger.log(logLevel: .debug, message: "nextAttemptInterval: \(nextAttemptInterval), RetryContext: \(retryContext)")
             if nextAttemptInterval != .never {
                 logger.log(logLevel: .debug, message: "Scheduling reconnect attempt at: \(nextAttemptInterval)")
-                // TODO: not great but running on the connectionQueue deadlocks
+                // TODO: can this cause problems because event handlers are dispatched to main queue as well (via `Util.dispatchToMainThread`)
                 DispatchQueue.main.asyncAfter(deadline: .now() + nextAttemptInterval) {
                     self.startInternal()
                 }
-                // running on a random (possibly main) queue but HubConnection will
-                // dispatch to the configured queue
+                // TODO: again, running on a random (possibly main) queue
                 if (retryContext.failedAttemptsCount == 0) {
                     delegate?.connectionWillReconnect(error: retryContext.error)
                 }

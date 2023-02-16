@@ -14,14 +14,10 @@ class DefaultHttpClient: HttpClientProtocol {
 
     public init(options: HttpConnectionOptions) {
         self.options = options
+        
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = options.requestTimeout
-        DefaultHttpClientSessionDelegate.shared.authenticationChallengeHandler = options.authenticationChallengeHandler
-        self.session = URLSession(
-            configuration: sessionConfig,
-            delegate: DefaultHttpClientSessionDelegate.shared,
-            delegateQueue: nil
-        )
+        self.session = URLSession(configuration: sessionConfig)
     }
     
     func get(url: URL, completionHandler: @escaping (HttpResponse?, Error?) -> Void) {
@@ -64,21 +60,6 @@ class DefaultHttpClient: HttpClientProtocol {
     @inline(__always) private func setAccessToken(accessTokenProvider: () -> String?, request: inout URLRequest) {
         if let accessToken = accessTokenProvider() {
             request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
-        }
-    }
-}
-
-fileprivate class DefaultHttpClientSessionDelegate: NSObject, URLSessionDelegate {
-    
-    static var shared = DefaultHttpClientSessionDelegate()
-    
-    var authenticationChallengeHandler: ((_ session: URLSession, _ challenge: URLAuthenticationChallenge, _ completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) -> Void)?
-    
-    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        if let challengeHandler = authenticationChallengeHandler {
-            challengeHandler(session, challenge, completionHandler)
-        } else {
-            completionHandler(.performDefaultHandling, nil)
         }
     }
 }

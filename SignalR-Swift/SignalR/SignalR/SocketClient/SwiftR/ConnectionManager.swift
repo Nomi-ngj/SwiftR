@@ -31,7 +31,7 @@ class ConnectionManager: NSObject {
     
     func connect(){
         connection.useWKWebView = true
-        connection.signalRVersion = .v2_0_0
+        connection.signalRVersion = .v2_2_2
         connection.queryString = ["Authorization":ConnectionConstants.Config.BEARER]
         
         let simpleHub = Hub(ConnectionConstants.chatHub)
@@ -74,6 +74,7 @@ class ConnectionManager: NSObject {
             self.connectionFailed?()
         }
         connection.error = { dict in
+            debugPrint(dict)
             self.connectionErrorDictionary?(dict)
         }
     }

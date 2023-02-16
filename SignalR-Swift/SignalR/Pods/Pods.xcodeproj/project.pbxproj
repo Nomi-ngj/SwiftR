@@ -8,312 +8,314 @@
 
 /* Begin PBXBuildFile section */
 		00C2F28CF77DA9FD80F798EA600CCC37 /* Pods-SignalR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C11E8AE54CE67777256460607AAEE /* Pods-SignalR-dummy.m */; };
-		0306880E008EF05443D1D97E2C76FEB8 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646D412D835DBF1FDE20CBC76D14F52 /* WebSocket.swift */; };
-		031409D90094F5F84945FCDC134682C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0421C3AC6198795C25183A8B4D1776C9 /* HubConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70901228C82BE867AE38E4885EB5BB5E /* HubConnectionDelegate.swift */; };
-		04A3E2CEB99B6823E3F187F5F90CA8BE /* jquery.signalr-2.1.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1189A673A01E6F674C540FDC8A51B /* jquery.signalr-2.1.1.min.js */; };
-		050C9FE19F8D1073C2F2095A51AB983C /* HubConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3AED77673E15EACF69644666BF911 /* HubConnectionProtocol.swift */; };
-		05E1EDA39A9163C278D18AF937197979 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE7901CF180A4775FA5A5F8903937F /* String+Dictionary.swift */; };
-		0C079C29DD499F4FD2F0DEDF2DFAD281 /* StreamHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BD9715CFA69AF87672C4BE017268 /* StreamHandle.swift */; };
-		0C9E1C5737694447F6ED7BB5E25FDF4E /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DEA7AA88C4FA09E0DF00945EB1C8E /* Version.swift */; };
-		119B37D7E7D3A59C6685FC0EFEE881CE /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC665F082480ADB01A3AD6BCAFB3A /* TaskDelegate.swift */; };
-		13663751683E0E3DB2F4D39DF93C03DE /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1704766377573894ECA17E9FB51A7B0 /* TransportType.swift */; };
-		1502A0A02D8CFD52B38BBA1A7C0702C9 /* HubInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7AC068170B8B00EF75369EA616 /* HubInvocation.swift */; };
-		15D2151D19FD799FC752487E87C6CBFC /* ReceivedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BABC3E2D2B42A32DE3D20482B55AC /* ReceivedMessage.swift */; };
-		1665A9395C61E647D9F64C0C436F0281 /* HubConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809068ADF7C1A5DF26F3449C5368738 /* HubConnectionExtensions.swift */; };
-		1733AF3675D669BBCC34283542DD8C1D /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09002B8FC69FC3F8D176F232187D19BC /* SSLClientCertificate.swift */; };
-		19AB312F9D378E610AB78532977D5854 /* HubProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDDC1EAC76D12CE4C8FCA651B53CD17 /* HubProxy.swift */; };
-		2119BBBDD76C9B182007C9E8D3BD8DDA /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610BBECA3222194765B19E2ED5F90665 /* Timeline.swift */; };
-		2A04AD140141FE7F6A2DF7C4A7474B31 /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E7ADE6416EF4400897649FC9249E03 /* HubConnection.swift */; };
-		2DAF602E171B61FDA9ADE864C3800668 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3AD3BE1950E924EDEF4694CECF21 /* Connection.swift */; };
-		2E197DA4475D779092ED3769E0D069AE /* ChunkBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE54453A9DBE39D7A1016A1567BC77F /* ChunkBuffer.swift */; };
-		32DC2CB144011FC5953744124A5B3579 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D94FCEA0784B13B29F718724C70D8A /* HttpResponse.swift */; };
-		33ED14F42900E1F73835537AAC429091 /* SwiftR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D67BBC1277ABD1E318C7F59BB95084 /* SwiftR-dummy.m */; };
-		346078B53BFD4B594DEAB51B5E4DDAC4 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3050F372F5D219270098F612DD828298 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34D6F8836DCAC6EE733E3FB7940EC40C /* JSONHubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F1ECF5E8F332492BFF3BF8018805D /* JSONHubProtocol.swift */; };
-		36A113920CD7EC34C421A8692C33C1FA /* ConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A24545B6CD578C2B47A433666F35D1 /* ConnectionProtocol.swift */; };
-		394F84D181E4E6087B76D34BD6401AE9 /* jquery.signalr-2.1.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D4E138875D09DDCD89FF472577CF20E4 /* jquery.signalr-2.1.2.min.js */; };
-		3DE8AA12C52787A0BA570717BB27AAB0 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853CC0C6FE1A97EC55BBBDC2BF688B06 /* ServerTrustPolicy.swift */; };
-		3FD0A8A27C0BD444662D533EEC2759C3 /* KeepAliveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389AF407632D49B041B55170C7A58AC2 /* KeepAliveData.swift */; };
-		41EF1C2F62FF3C4315697D69670AE139 /* jquery.signalr-2.0.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C611B6B8EBEEBB6B88D3052981376 /* jquery.signalr-2.0.2.min.js */; };
-		42ECF68DBE821129D94A3C8E0E8F816D /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA68269186E535563A274793B0567F5 /* ConnectionDelegate.swift */; };
-		43C3C17BFDFD71F45C5A7AFB0C0BEF45 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E05DB12003906F861C4670FB489688 /* ResponseSerialization.swift */; };
-		449620A011D4E95E508B36B68FF80C59 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF154E161990B16978F0888A0035DF /* Transport.swift */; };
-		46D1E90D83D5C60F2AC15731F1136B17 /* WebSocketConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAEBE46E3F8E60014633E52D798CF /* WebSocketConnectionInfo.swift */; };
-		49986AD1BC778301ADB7DCEBEC636074 /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7840C7E4374DFFE9E493E7CF619C01 /* HubConnection.swift */; };
-		4A181C92E9191CCB01DC052D3C7EC1FC /* SignalRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57AAF6694ED924D43DE86734E984533 /* SignalRError.swift */; };
-		4C301CCA81AAFB4453B6B827F846E0AC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67735E6418CB5E16153B114C70D730BD /* Validation.swift */; };
-		4F48D96D6DC745FDE3B6A2177BD40A31 /* ExceptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8E77AB870B877FFB439FB7EE210 /* ExceptionHelper.swift */; };
-		532593DB8FBDD02A8374F07594CC5951 /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DC8770986CC19F0113C2A0F96BB65 /* NegotiationResponse.swift */; };
-		537D7452E6C8C82D9C1908EA29706E35 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322363639CDE0DD19BA4035A8CD8A861 /* Notifications.swift */; };
-		563BF89165C2840EDC4588BE42118177 /* DefaultTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020744164D1B2C99AC777074ED03915D /* DefaultTransportFactory.swift */; };
-		5970B574C097B1AB32DEE4844A8C5D42 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A59697DE296D9223CC2831E2DA002BF1 /* Starscream-dummy.m */; };
-		5CECD168465CF59B489253695D3FB51F /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3A6C4C8DFBFFD05F5D6A252096163 /* NetworkReachabilityManager.swift */; };
-		5E316FEFDCB40306E90B390DA8802370 /* jquery.signalr-2.2.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 8D1233991D60A3C4F6ECACBE9185CA79 /* jquery.signalr-2.2.2.min.js */; };
-		69153567051DAC54546193359AF1ED24 /* SwiftSignalRClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DA3568F766E53A32D9D3BF90EA4A0E /* SwiftSignalRClient-dummy.m */; };
+		04A3E2CEB99B6823E3F187F5F90CA8BE /* jquery.signalr-2.1.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F2C7F5C5C10B5CCA06E15DCB47F883A7 /* jquery.signalr-2.1.1.min.js */; };
+		050C9FE19F8D1073C2F2095A51AB983C /* HubConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1028894D9C0E6734FF6E77ABD54D0485 /* HubConnectionProtocol.swift */; };
+		05E1EDA39A9163C278D18AF937197979 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159ABDA4F395EE280174EBA073AF4F80 /* String+Dictionary.swift */; };
+		0843B2DA62CBDC162CE16698E0E7B8F8 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE251720F2C6D6E6C85C23C8F51013 /* TransportType.swift */; };
+		0C9E1C5737694447F6ED7BB5E25FDF4E /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B820CA1475C53DA215136048B6E1BBC /* Version.swift */; };
+		119B37D7E7D3A59C6685FC0EFEE881CE /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108784F591332C0E1A2AB947CAF9498 /* TaskDelegate.swift */; };
+		12CD1675AA61E0CBB97AB715ACF57C6F /* JSONHubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C29D3963CD9DB7C2DB10B2AE8613E88 /* JSONHubProtocol.swift */; };
+		1502A0A02D8CFD52B38BBA1A7C0702C9 /* HubInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03CA7D04F63A6B59654ABB04A062F0 /* HubInvocation.swift */; };
+		15D2151D19FD799FC752487E87C6CBFC /* ReceivedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91427E72880968DF24C0E93225416465 /* ReceivedMessage.swift */; };
+		19AB312F9D378E610AB78532977D5854 /* HubProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E0D14FE5692B56359FCD10881506B /* HubProxy.swift */; };
+		1BD8E282A67C963F39B71BE29C8610D8 /* ServerInvocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860D23672EB93D4A64C43670A3507998 /* ServerInvocationHandler.swift */; };
+		1C70F94532FDDA67E0137D45448A72D7 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C235459ECE0A60425E9D91A22926D631 /* SSLSecurity.swift */; };
+		1C7D296F1C4EDD8D177AEFAEFB720212 /* DefaultHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81852F98326147B06895275E10AE2B89 /* DefaultHttpClient.swift */; };
+		1CBCCEEEEBECA6D9AACBA6EE5D6E1638 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57414C91A7E55F089F78A5BE53076FE1 /* Starscream-dummy.m */; };
+		1E4838A05F7B64611A5AA1B759FBBDBE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7615D3F5A952863A4D4CCB0AE89472 /* Util.swift */; };
+		2119BBBDD76C9B182007C9E8D3BD8DDA /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE72F8DCA9CA907145A85044DDBE181F /* Timeline.swift */; };
+		21C6A07BD3D221155ED1D54D8CB87953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		274F6D66C489946E3F675746F78646E4 /* SwiftSignalRClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B683B232C20F76C51C560C97D28113AE /* SwiftSignalRClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAF602E171B61FDA9ADE864C3800668 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA69A5502AB7C1854A8AF5ACEF95535 /* Connection.swift */; };
+		2E197DA4475D779092ED3769E0D069AE /* ChunkBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05FEFB07015B70453B89160D42A1B9 /* ChunkBuffer.swift */; };
+		309BB98214558EDE7306AD17F8372CEF /* HubConnectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C110B81BA838D203D6BF45DFDDE3158 /* HubConnectionBuilder.swift */; };
+		33ED14F42900E1F73835537AAC429091 /* SwiftR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C936867A210D11580A020B428353E925 /* SwiftR-dummy.m */; };
+		36A113920CD7EC34C421A8692C33C1FA /* ConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1277458786EB4A69E063DA4D6F66F /* ConnectionProtocol.swift */; };
+		394F84D181E4E6087B76D34BD6401AE9 /* jquery.signalr-2.1.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 9FDBCE77B90488830085F5E6DA84F199 /* jquery.signalr-2.1.2.min.js */; };
+		3DB4D4F7A17A1F9127C21D50AFFB4BE1 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97550DA9BCBAE24A61FEECFBECE2CEE /* HttpResponse.swift */; };
+		3DE8AA12C52787A0BA570717BB27AAB0 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AA52807FFDF1B55B193985973A2E04 /* ServerTrustPolicy.swift */; };
+		3FD0A8A27C0BD444662D533EEC2759C3 /* KeepAliveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BA953A46BB94255089EA3D3AE95CE /* KeepAliveData.swift */; };
+		41EF1C2F62FF3C4315697D69670AE139 /* jquery.signalr-2.0.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 47A2B7A7EC916448E53C25CB0A48E50F /* jquery.signalr-2.0.2.min.js */; };
+		43C3C17BFDFD71F45C5A7AFB0C0BEF45 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23773EBFBE09CCB27B4E2B5D939D490 /* ResponseSerialization.swift */; };
+		44F04E9FC8D94045D60FB3EC1B17AE3F /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B504FCDD0997A630BC46F3CE7A32C /* ConnectionDelegate.swift */; };
+		45CBAE050D545A447E4A148C4C36831D /* HandshakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340017B1B9C71BD38CA47592FE5B68B /* HandshakeProtocol.swift */; };
+		46D1E90D83D5C60F2AC15731F1136B17 /* WebSocketConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30642DC0BC33DFCF945B81AA91E0565 /* WebSocketConnectionInfo.swift */; };
+		49986AD1BC778301ADB7DCEBEC636074 /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9F636682717B01C8C7CDC89DC734D /* HubConnection.swift */; };
+		4C301CCA81AAFB4453B6B827F846E0AC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224724D20AF79CC7A8BC8E5F3AC00D5 /* Validation.swift */; };
+		4F157E3B2220BEB4E0CED1FA1D837F8D /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8DCA93FA7FC99D4EBBA7F6EACC2FA /* Compression.swift */; };
+		4F48D96D6DC745FDE3B6A2177BD40A31 /* ExceptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7797B04AA53E32D7AE7B554247B6A5EC /* ExceptionHelper.swift */; };
+		4FCDDAA7DA29DC9F3E0B0D61ED857D30 /* HttpConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E8EA9681BAEBA831CEE4D3A70208B /* HttpConnectionOptions.swift */; };
+		50052A4E8299738823D5058977CAADD2 /* CodableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948FE49592B721126CD8F34C391A88 /* CodableHelpers.swift */; };
+		532593DB8FBDD02A8374F07594CC5951 /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4309C79B38D5D12661D2ADBD4FA4825D /* NegotiationResponse.swift */; };
+		537D7452E6C8C82D9C1908EA29706E35 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453A6BE271820CEB16BEC278DBDBAA2 /* Notifications.swift */; };
+		549C6B4F4C04892B1581E3DCE17D134A /* SwiftSignalRClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE66766EA3ACE40C740D418F4E98D68E /* SwiftSignalRClient-dummy.m */; };
+		5CECD168465CF59B489253695D3FB51F /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B12EA4C1E27772FDF480DC98F472E9 /* NetworkReachabilityManager.swift */; };
+		5E316FEFDCB40306E90B390DA8802370 /* jquery.signalr-2.2.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 40D4789E4D1BE489034E89B0FCDF3C46 /* jquery.signalr-2.2.2.min.js */; };
+		615A562BAE9DB15253A10BB416F310A0 /* WebsocketsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12EFD59E0DF3AD07FF6DD8F32E81B5 /* WebsocketsTransport.swift */; };
+		65BEBCE655F4768D2AF16AF3A34940D5 /* ReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DF33392111F22535346284FE68BE1 /* ReconnectPolicy.swift */; };
+		6ABA53E95929DB4FE8BEB697CA9BC57E /* DefaultTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C77BA64E4E405E9BCFCF713292201F /* DefaultTransportFactory.swift */; };
 		6D0464BDCD6CE52FE613303A5558DE30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6DDA349155339DED117306075DE96FBD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DE32454BFF9AC84A05AAEB587CCBF /* Logger.swift */; };
-		6DF154F51210D4C446AA021F2DBA34A4 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B13F20B1DBBC246FEFE6F437ED2306 /* MultipartFormData.swift */; };
-		70835A867E7869FB58CC5D5102AA8803 /* ClientTransportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C1E1CAB8CE6DB91B92E818C217B7F5 /* ClientTransportProtocol.swift */; };
-		709DE945B4EF65C3789C2118D2D0629E /* LongPollingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668EF9C51E959B1A97A7653F9AE377BB /* LongPollingTransport.swift */; };
-		70EA6F068498CEC1B273D6BB1E74EB4E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC119796A0AEDBA3A5D6C445E30C00F /* Alamofire.swift */; };
-		715DD728CB3431FC39DEC3EE7E5559D8 /* SwiftR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C68A9FE72090D0DAFBFFF061266396 /* SwiftR.swift */; };
-		751677BDF80069C2B20F0B382CDF5BA6 /* jquery.signalr-2.0.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CEF01D0F65EE3EC5635A9AD02C6DBE77 /* jquery.signalr-2.0.1.min.js */; };
-		7A6950F5AED49696A5E3D2A00884C2D6 /* jquery.signalr-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = DB17140B78F4C874FF7897A2F83E351E /* jquery.signalr-2.1.0.min.js */; };
-		7C3DC5A312A3F1D7C6AB48DDC5EC33AC /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DEBE8BF1D9E80D15496357DB754AC /* WebSocketTransport.swift */; };
-		7D3CA0241A65A1E91964AFDBB70E0BB8 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277A3C78A07FD7DF8339BBFE51ECEE94 /* ConnectionState.swift */; };
-		8023EECE8437F0311A065A9C2F420E2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623AF6DBA692A7A687EF7A341BF19A7 /* SessionManager.swift */; };
-		810F7C3851479448D430B112CFC71CE2 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9A8C0F9EA624EA59713FD041F9A10 /* Compression.swift */; };
-		85379CCF081FC9C36F082E71D2DF4D2F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3E4B8A11CFE3056D8A2B5A2574A80 /* SessionDelegate.swift */; };
-		85F3FA00400574CD6703D03288B2EF4A /* AutoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EF2B1391B63267E8A3E01B3EB47D4 /* AutoTransport.swift */; };
-		8606044D2EE2DAA6A917A312DD108C21 /* SwiftR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBA33FE69D58FF7841138BCA97A60F8 /* SwiftR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87B512B8471DD5E848F67D363C905CC1 /* DefaultHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8569166EDBB2E1697C80FC8331A6F /* DefaultHttpClient.swift */; };
-		8A16399B8A648A2337DD37D8DF45B705 /* SignalRSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6823970F2B628C4EF9543D7CC9BEE7 /* SignalRSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A7B6FE621513A29B877ACA643011F92 /* LongPollingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EAFBA4B433041F16104357CE8302A9 /* LongPollingTransport.swift */; };
-		8C61DA0B76393AE9BD3FFA3BE8BCCF87 /* HttpTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE688350C5E83A85C3983E61DED10F1 /* HttpTransport.swift */; };
-		8D4857A6ABB1D6E57159DED6914B225E /* ServerSentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD1915525F498B2A634ADF7943D241 /* ServerSentEvent.swift */; };
-		8DA179FBE981F9231E7BF125CE350F2B /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE10DE72B7ABA9E6CDE01C8B3CED50 /* HttpConnection.swift */; };
-		8FCC65DB5D2A915A95BB598FBB665973 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E840716C378EE636A636ABE0E21488 /* Connection.swift */; };
-		90E42B43904F2F22CA3A8BBD0155D9A2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B5EA936A916D76E9A55834366285C8 /* AFError.swift */; };
-		9146510540C8DAF109CC4BCCB0CA74A9 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B1F822EC787CE6167018869917DBAD /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		916B5B4A34DA1DBB40F8FC173B98866E /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72CAAE0A3F6F206197775B794F3CF5 /* NegotiationResponse.swift */; };
-		94AFE704E64BB1A3B4EC16F9B146AFC0 /* HandshakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C715B30A99720FC26F1543250C54FF /* HandshakeProtocol.swift */; };
-		9670246F6422DFF3E476FC3ED0D73410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		97E3368B54D18230FBBC68F25D99A61A /* ServerInvocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A379354BAFDDF4C4DA2915D07354AC1 /* ServerInvocationHandler.swift */; };
-		9BCBBFE03318F5DD172F9E1F3100F67B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1351B5B4197BE22ED3DF1D9CB0C6F5B /* Response.swift */; };
+		6DF154F51210D4C446AA021F2DBA34A4 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BDAE758A601967A6E7AF304AA9BBC /* MultipartFormData.swift */; };
+		70835A867E7869FB58CC5D5102AA8803 /* ClientTransportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23620F14D90A9049401686683EBD4095 /* ClientTransportProtocol.swift */; };
+		709DE945B4EF65C3789C2118D2D0629E /* LongPollingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69653C127D66F5C6B03FFC554F5E8C3 /* LongPollingTransport.swift */; };
+		70EA6F068498CEC1B273D6BB1E74EB4E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5191FF082F412E9FDCD9F86BCB57588 /* Alamofire.swift */; };
+		715DD728CB3431FC39DEC3EE7E5559D8 /* SwiftR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424B2DAF0ECB9A38659AEC7A0C8C657 /* SwiftR.swift */; };
+		751677BDF80069C2B20F0B382CDF5BA6 /* jquery.signalr-2.0.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 58884CA5CE40BD75FAF203F77454235C /* jquery.signalr-2.0.1.min.js */; };
+		7A6950F5AED49696A5E3D2A00884C2D6 /* jquery.signalr-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 7524455FB35377D63E2A29A8641CE131 /* jquery.signalr-2.1.0.min.js */; };
+		7C3DC5A312A3F1D7C6AB48DDC5EC33AC /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAAC6CF49D7A4E49472CCE761B0BEB /* WebSocketTransport.swift */; };
+		7D3CA0241A65A1E91964AFDBB70E0BB8 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FB1F46C10A0ADCD404A39F3A665BA /* ConnectionState.swift */; };
+		8023EECE8437F0311A065A9C2F420E2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9309C79FD909AD25432283C10B5059 /* SessionManager.swift */; };
+		84B9C71D26472D509B4D25D943ED6332 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC382BD43FBB89598A604C7C856C09 /* Logger.swift */; };
+		85379CCF081FC9C36F082E71D2DF4D2F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A665CE7BD4A3FC76ED00657971D98 /* SessionDelegate.swift */; };
+		85F3FA00400574CD6703D03288B2EF4A /* AutoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90EF95835DD68F4A9233E24E0D8B3F /* AutoTransport.swift */; };
+		8606044D2EE2DAA6A917A312DD108C21 /* SwiftR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8940DEB93E69D364FEFCD77D1BC509DD /* SwiftR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A16399B8A648A2337DD37D8DF45B705 /* SignalRSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6325C84CC9F93FD279584ECF69D1A8F /* SignalRSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C61DA0B76393AE9BD3FFA3BE8BCCF87 /* HttpTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D945BFCC0C5764D739730E90F6D9894B /* HttpTransport.swift */; };
+		8D4857A6ABB1D6E57159DED6914B225E /* ServerSentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B77DF103F5909C42036762B6142C1D3 /* ServerSentEvent.swift */; };
+		8D848435AFD4249DC491B00C575A5848 /* ReconnectableConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B8C01A415FD5C232AC6500ADF5CEB /* ReconnectableConnection.swift */; };
+		90E42B43904F2F22CA3A8BBD0155D9A2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974463FC79878E4B363C4DED86C52E3E /* AFError.swift */; };
+		9146510540C8DAF109CC4BCCB0CA74A9 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C4D40E636FBDF4EC8D3B911F1E89AE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BCBBFE03318F5DD172F9E1F3100F67B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1FF57096E3F522D9BC502996D1734 /* Response.swift */; };
+		9D8A54DEE1C208454B56D2DF721C4350 /* StreamHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5D9FAA92CE7B42598A3703FD70182 /* StreamHandle.swift */; };
+		9FC7203CFE92C9FDE7ABBB255293D7C2 /* TransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8252AB1BE6826A3CA32C12C85959D4 /* TransportDelegate.swift */; };
 		A0CF438890E5E15CC1D37BE7AEE90E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		ADD1552E3987F6DB6EBE2C7F727DCEA8 /* HubConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065BA7AFFF41A4537C8A70A0278453F /* HubConnectionOptions.swift */; };
-		AF055D404C2CC92E73747D1F514B208E /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD130B328760D779ADB06B291F9A2AB /* HttpClientProtocol.swift */; };
-		B2415F9A5A3BEEB50FA7C2847932A38A /* HubConnectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F96FCCC1EC05F390B232AF2B8FC17C /* HubConnectionBuilder.swift */; };
-		B2CDA414CFCBD960F93C82994425BB5F /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F99C95E5B123BF1A22E00EF57914F /* Dictionary+Json.swift */; };
-		B32FEADCE71EC5421E77558B8742AA8B /* jquery.signalr-2.2.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3FE54FEE9F0F3D722DB3781D00343FAC /* jquery.signalr-2.2.1.min.js */; };
-		B6DDF026F073B5A50CF465B6E4C25991 /* TransferFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59886F47D810F1E909C3918DD57A8FA9 /* TransferFormat.swift */; };
-		B6F470EA33DF39FAB6211685511FD8FE /* SwiftR.js in Resources */ = {isa = PBXBuildFile; fileRef = 106365D0877A2F6AA16D70645546D81F /* SwiftR.js */; };
-		BC9E3ADFC2F851CD1075F5DE0855E1FC /* ReconnectableConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B67FCD5F090D9197B9EFF03341D854 /* ReconnectableConnection.swift */; };
+		A5C8AF362AAF9C56F4C71472A48E3235 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778761D5CB6CD68366EDD9C2FA2E84A /* Transport.swift */; };
+		ACE48589B8B47838732E882A896C2DEB /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FB26864B894CFD739548FC7EC310C /* WebSocket.swift */; };
+		AF0E518C4C089C34E23CCF2CFBD0D1F7 /* HubConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D627F18769C3BC7F5F1FE1F51CFA1A4 /* HubConnectionExtensions.swift */; };
+		AF46E2F3DF8DFB0F22D41B1C37A60316 /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C560057803C8589BD3A1D8289E655 /* NegotiationResponse.swift */; };
+		B2CDA414CFCBD960F93C82994425BB5F /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD03904AEE43369494E907FAFD68E78 /* Dictionary+Json.swift */; };
+		B30DA5B97F402C140861CFED109ED758 /* TransferFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B2C974124A421EE326E29E7327A29 /* TransferFormat.swift */; };
+		B32FEADCE71EC5421E77558B8742AA8B /* jquery.signalr-2.2.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E171A7A365441F7A61C5E954D892F35D /* jquery.signalr-2.2.1.min.js */; };
+		B6F470EA33DF39FAB6211685511FD8FE /* SwiftR.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C8204CE85FEA57F71C9E818670984FE /* SwiftR.js */; };
+		B979264644E27C3D966397949F37EC81 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F48D28C19AF3C65CCD38793A3F8F18 /* HttpConnection.swift */; };
+		BD0D9F316D547810B124446E03B9C4CF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ADCFCFFCA4940E7F6312FA9040A80 /* Connection.swift */; };
+		BDA5BD17660723482C0DC797C0285BBE /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4341E683BA96E38C58E3E210DD79707 /* SSLClientCertificate.swift */; };
 		BDE906C3D8EA7759E92BD16C4D2B78E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C08689462233B32402BB6CC6BCB73907 /* HubResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0B9CFAFAD1EA3A5869C97D07DC089 /* HubResult.swift */; };
-		C27C72B2D755F3A7B2D97089CA75146F /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EBCA936C0D32CD771DFB9FA16DD24 /* Alamofire-dummy.m */; };
-		C3047C4776571805749F23E9E6D4EA5A /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D637C66D015392764473D383F5CEDF3 /* SSLSecurity.swift */; };
-		C3319908A9E2E7C974F9A70653C4CCE6 /* HubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCD1BA545A4E814A34C8D211C538F7 /* HubProtocol.swift */; };
-		C5B3B19F2095136FC69C5C71453182F6 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA99777532741DA0E284DA9A600030A /* ConnectionDelegate.swift */; };
+		C08689462233B32402BB6CC6BCB73907 /* HubResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC57360446EE979CF78495607E92D /* HubResult.swift */; };
+		C2262A192525DE4FD3326F093C0341C0 /* HubConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501AE291CE2AA748C6620686151CF63 /* HubConnectionDelegate.swift */; };
+		C27C72B2D755F3A7B2D97089CA75146F /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC4A86A247CE3DC0B99512208AB252 /* Alamofire-dummy.m */; };
+		C563C3CAEAACBD22A8F761A39D1EB0FF /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50534951D1C2584ADA8666CF4E1C481 /* WebSocket.swift */; };
+		C585B996F23A18A9F826FDA30D4B9D52 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9C7F129BBB186CDD82D36F2D219AE9 /* HttpClientProtocol.swift */; };
+		C5B3B19F2095136FC69C5C71453182F6 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D0D078426552F0282BBCA84B47136 /* ConnectionDelegate.swift */; };
 		D465B00F05E6DEEDA77B1DA7423CCDC9 /* Pods-SignalR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A22162950F40422482CAC5B86AB4603 /* Pods-SignalR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D46CB5AF7BE345C5D27ABF9DCF692881 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6995A46BD11783DD0A5320CF0100F /* Result.swift */; };
-		D4CC00029A63000BE1357AEDA67CB42F /* ServerSentEventsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CC251451D903EACC5323CC39E8A15 /* ServerSentEventsTransport.swift */; };
-		D593E5BEB4221FF272DBF69E51945319 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58109DD9D82A93DA90D1502EDE7A1987 /* Request.swift */; };
+		D46CB5AF7BE345C5D27ABF9DCF692881 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F521D6F6479E84017C2D025506E08D /* Result.swift */; };
+		D4CC00029A63000BE1357AEDA67CB42F /* ServerSentEventsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F1F8AC6AD4925AD4C90917F1703E /* ServerSentEventsTransport.swift */; };
+		D593E5BEB4221FF272DBF69E51945319 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10550FC9EAA4A979983C0B252A538175 /* Request.swift */; };
 		D5B8E9FB0ED1851CCA36FC395B5A3D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D5CF07401DE5C819F726AC0C8298B7D5 /* HubProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353F788DE186606DD000ECBDA90323C9 /* HubProxyProtocol.swift */; };
-		DD5C09ABB1B3318F25B3385C458F9877 /* jquery.signalr-2.2.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F5A4DDECF7E5A4CBB0DCDABD13B52E97 /* jquery.signalr-2.2.0.min.js */; };
-		DDEA2B1F2F17B2565276D1129BA5DAD1 /* CodableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AB708EA7CCAB66E4B169FB3648F03 /* CodableHelpers.swift */; };
-		E13CCCFCA38CB51B76D8AB5ECCFADAEC /* TransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6F01737125E2B461678E7B649AD22 /* TransportDelegate.swift */; };
-		E2BEC0915AA950032861C8A1E3E75ECA /* jquery.signalr-2.0.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = ABB7880812238D6D94B6F0610DE6A5DF /* jquery.signalr-2.0.0.min.js */; };
-		E89DAC42CB9D900368060ED466DCC4B2 /* ReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD61711D2705E33E78C94382867CFE /* ReconnectPolicy.swift */; };
-		EC4A16C9C76F8BC21A6579572FE1AE9C /* SwiftSignalRClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BA89D7B6A0A1E210ECE4033CD05E5B /* SwiftSignalRClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC8E5AA010AC48C6DEC748295E5A30F7 /* WebsocketsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65EAF8F3140AC89A5AB3837D82B3A29 /* WebsocketsTransport.swift */; };
-		EE1C504AE4FA7793DD414B210ACA1E0C /* jquery.signalr-2.0.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D6CDB2496A14B0D158E339D7915BF000 /* jquery.signalr-2.0.3.min.js */; };
-		F036FB4EC1A0DD7A37FD0F9FE4E3C90A /* HeartbeatMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0CF79CE686EC0B0900B58F34D91A0 /* HeartbeatMonitor.swift */; };
-		F5C92DC8E274C4FC541267A97575BC05 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B042DE3C445A2478191DD0901D301 /* ParameterEncoding.swift */; };
-		F80F7ECC973B4134B47EDE592ADB8986 /* jquery-2.1.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E88641C045052B6564BF89462DF90C93 /* jquery-2.1.3.min.js */; };
-		F83CE66E7541D2F9AB9EBE369FC07ED0 /* SignalRSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC562D6FBA5620950B6C60E254B4332 /* SignalRSwift-dummy.m */; };
-		F93AEAF3659818E2308E0E5C70B66423 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751F203697A891393DA813442EE43EE /* DispatchQueue+Alamofire.swift */; };
-		FB2F3019F0E43C2D4328E20B2AC99C5A /* HttpConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64CD10D63D19D9E149F6D14AD6B366 /* HttpConnectionOptions.swift */; };
+		D5CF07401DE5C819F726AC0C8298B7D5 /* HubProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EAD296C24025BD259FC19B6F163A9F /* HubProxyProtocol.swift */; };
+		DD5C09ABB1B3318F25B3385C458F9877 /* jquery.signalr-2.2.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 982617DAACCCB6A31AFA21969770D889 /* jquery.signalr-2.2.0.min.js */; };
+		DF2ABE58BEEBB65852AF1C1F488F0E47 /* SignalRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B34C7745E23A8FFF4E45644E1C0FA5 /* SignalRError.swift */; };
+		DFC7B7525F1C96BABFF1CFE8EBA12AB8 /* HubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824099FC45683DD0D183982C897D00F /* HubProtocol.swift */; };
+		E2BEC0915AA950032861C8A1E3E75ECA /* jquery.signalr-2.0.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = FBEF79961C5A770F27E3FEB4E1233811 /* jquery.signalr-2.0.0.min.js */; };
+		E810AA8A73730BF669095B73C564EA99 /* LongPollingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A55AC6E8522CA01397DC6B0BE9ECE /* LongPollingTransport.swift */; };
+		EE1C504AE4FA7793DD414B210ACA1E0C /* jquery.signalr-2.0.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B4F5865A7AAA53D1A12CF5C111CC769D /* jquery.signalr-2.0.3.min.js */; };
+		F036FB4EC1A0DD7A37FD0F9FE4E3C90A /* HeartbeatMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15A1D01E703117DD6AA768B7472616 /* HeartbeatMonitor.swift */; };
+		F1B0ACB1C2E198F56495C0C43D57AB0D /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B75656251FD5B15FFBD9986164306E5F /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FA7AC35F14C27718F443B92C858563 /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BCFC6CA826409B478553E2B2BB80 /* HubConnection.swift */; };
+		F5C92DC8E274C4FC541267A97575BC05 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2A7F499BD057700905BA9113C4DE9 /* ParameterEncoding.swift */; };
+		F80F7ECC973B4134B47EDE592ADB8986 /* jquery-2.1.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 68FE414CF96C92E12117727D3189188D /* jquery-2.1.3.min.js */; };
+		F83CE66E7541D2F9AB9EBE369FC07ED0 /* SignalRSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84366C768C9AB2B2E0C98D43E53588BD /* SignalRSwift-dummy.m */; };
+		F93AEAF3659818E2308E0E5C70B66423 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B29FDB7FEB30484CBF5B50B217765 /* DispatchQueue+Alamofire.swift */; };
+		FD143A03B1472F53302DA75163C8AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		287271BDDAB0A8A9113486563D05C2D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
-		};
-		536CF0487A1CA25167D4CE1F9E1BAA48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E6C4045913212CD35E82B99586FC32D;
-			remoteInfo = SignalRSwift;
-		};
-		5485B0D69F91524287D6A73541337FC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
-			remoteInfo = SwiftSignalRClient;
-		};
-		74ECB79DBEF54581CBC6EE6C383A57CF /* PBXContainerItemProxy */ = {
+		1EF5F4AC6CE8701B39B7E587971D70EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		A2042DFE7F6A7F42AD51DA1936E6BF7C /* PBXContainerItemProxy */ = {
+		2CE78B65848BB574B7026486CC77EEC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E242525A17C06AAB71CFB6A089530E6F;
 			remoteInfo = SwiftR;
 		};
-		BE68F832793446D7B425A7DCF8E8C849 /* PBXContainerItemProxy */ = {
+		468C7FA76224809B1C3074BEDAA4BA1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
+			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
+			remoteInfo = SwiftSignalRClient;
 		};
-		D87849FC17BE9CA9DB6A866BEFB3D036 /* PBXContainerItemProxy */ = {
+		A511A4F394010E21C17985685CBF8633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
+		A588D4C1BCA4228221EB0833734ADF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		CCE84F4B0237DACB75E68C379290372B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		D1BC735A029F3CB2CDF23FDB28155294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E6C4045913212CD35E82B99586FC32D;
+			remoteInfo = SignalRSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C8569166EDBB2E1697C80FC8331A6F /* DefaultHttpClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultHttpClient.swift; path = Sources/SignalRClient/DefaultHttpClient.swift; sourceTree = "<group>"; };
-		00F96FCCC1EC05F390B232AF2B8FC17C /* HubConnectionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionBuilder.swift; path = Sources/SignalRClient/HubConnectionBuilder.swift; sourceTree = "<group>"; };
-		020744164D1B2C99AC777074ED03915D /* DefaultTransportFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTransportFactory.swift; path = Sources/SignalRClient/DefaultTransportFactory.swift; sourceTree = "<group>"; };
-		021DC8770986CC19F0113C2A0F96BB65 /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = "SignalR-Swift/Client/NegotiationResponse.swift"; sourceTree = "<group>"; };
-		05B5EA936A916D76E9A55834366285C8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		0623AF6DBA692A7A687EF7A341BF19A7 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		074DFCF31A7D6FBE401BD1B29014A25B /* Pods-SignalR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalR-acknowledgements.markdown"; sourceTree = "<group>"; };
-		08E05DB12003906F861C4670FB489688 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		09002B8FC69FC3F8D176F232187D19BC /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
-		0A1A4D397B5BA04C8B2F57DDBCC987B6 /* SwiftR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftR.debug.xcconfig; sourceTree = "<group>"; };
-		0BC7F0917E0AB39AC514A008E76C12C4 /* SwiftR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftR-prefix.pch"; sourceTree = "<group>"; };
-		0D637C66D015392764473D383F5CEDF3 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
-		106365D0877A2F6AA16D70645546D81F /* SwiftR.js */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftR.js; path = SwiftR/Web/SwiftR.js; sourceTree = "<group>"; };
-		13467BFDB5B5A5714C2AC26B01E86D36 /* SwiftR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftR.release.xcconfig; sourceTree = "<group>"; };
-		15B31E1DD348FEE70DC8361A864A9AFD /* SwiftSignalRClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSignalRClient-Info.plist"; sourceTree = "<group>"; };
-		19A6FF7AC068170B8B00EF75369EA616 /* HubInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubInvocation.swift; path = "SignalR-Swift/Client/Hubs/HubInvocation.swift"; sourceTree = "<group>"; };
-		19C715B30A99720FC26F1543250C54FF /* HandshakeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandshakeProtocol.swift; path = Sources/SignalRClient/HandshakeProtocol.swift; sourceTree = "<group>"; };
-		1A379354BAFDDF4C4DA2915D07354AC1 /* ServerInvocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerInvocationHandler.swift; path = Sources/SignalRClient/ServerInvocationHandler.swift; sourceTree = "<group>"; };
+		0824099FC45683DD0D183982C897D00F /* HubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProtocol.swift; path = Sources/SignalRClient/HubProtocol.swift; sourceTree = "<group>"; };
+		0A15A1D01E703117DD6AA768B7472616 /* HeartbeatMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatMonitor.swift; path = "SignalR-Swift/Client/HeartbeatMonitor.swift"; sourceTree = "<group>"; };
+		0C5E8EA9681BAEBA831CEE4D3A70208B /* HttpConnectionOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnectionOptions.swift; path = Sources/SignalRClient/HttpConnectionOptions.swift; sourceTree = "<group>"; };
+		0C9309C79FD909AD25432283C10B5059 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		0D627F18769C3BC7F5F1FE1F51CFA1A4 /* HubConnectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionExtensions.swift; path = Sources/SignalRClient/HubConnectionExtensions.swift; sourceTree = "<group>"; };
+		1028894D9C0E6734FF6E77ABD54D0485 /* HubConnectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionProtocol.swift; path = "SignalR-Swift/Client/Protocols/HubConnectionProtocol.swift"; sourceTree = "<group>"; };
+		10550FC9EAA4A979983C0B252A538175 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1340017B1B9C71BD38CA47592FE5B68B /* HandshakeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandshakeProtocol.swift; path = Sources/SignalRClient/HandshakeProtocol.swift; sourceTree = "<group>"; };
+		159ABDA4F395EE280174EBA073AF4F80 /* String+Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Dictionary.swift"; path = "SignalR-Swift/Extensions/String+Dictionary.swift"; sourceTree = "<group>"; };
+		171122EE1C3F240D4F12CE53C4539AE5 /* SwiftR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftR.modulemap; sourceTree = "<group>"; };
+		177DF33392111F22535346284FE68BE1 /* ReconnectPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectPolicy.swift; path = Sources/SignalRClient/ReconnectPolicy.swift; sourceTree = "<group>"; };
+		197B504FCDD0997A630BC46F3CE7A32C /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = Sources/SignalRClient/ConnectionDelegate.swift; sourceTree = "<group>"; };
+		1AF238402D4D9BCC5853F45454996432 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		1B77DF103F5909C42036762B6142C1D3 /* ServerSentEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerSentEvent.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ServerSentEvent.swift"; sourceTree = "<group>"; };
 		1D6856EBB07F6CC478FC9907C0468DED /* Pods-SignalR */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SignalR"; path = Pods_SignalR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20FB0BC7043C49ED5C1DD36447B23FBE /* SwiftSignalRClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.release.xcconfig; sourceTree = "<group>"; };
-		2751F203697A891393DA813442EE43EE /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		277A3C78A07FD7DF8339BBFE51ECEE94 /* ConnectionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionState.swift; path = "SignalR-Swift/Client/Enums/ConnectionState.swift"; sourceTree = "<group>"; };
-		290FAEBE46E3F8E60014633E52D798CF /* WebSocketConnectionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketConnectionInfo.swift; path = "SignalR-Swift/Transports/WebSockets/WebSocketConnectionInfo.swift"; sourceTree = "<group>"; };
+		1FDC4A86A247CE3DC0B99512208AB252 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		22CC382BD43FBB89598A604C7C856C09 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/SignalRClient/Logger.swift; sourceTree = "<group>"; };
+		23620F14D90A9049401686683EBD4095 /* ClientTransportProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientTransportProtocol.swift; path = "SignalR-Swift/Client/Protocols/ClientTransportProtocol.swift"; sourceTree = "<group>"; };
+		2787DF2FBBE9E86B49D480A1E8823355 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
 		2A22162950F40422482CAC5B86AB4603 /* Pods-SignalR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalR-umbrella.h"; sourceTree = "<group>"; };
-		2AF1189A673A01E6F674C540FDC8A51B /* jquery.signalr-2.1.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.1.min.js"; sourceTree = "<group>"; };
+		2AF9F636682717B01C8C7CDC89DC734D /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = "SignalR-Swift/Client/Hubs/HubConnection.swift"; sourceTree = "<group>"; };
 		2BDAA2716DBA590A76A72C1808328DFD /* SwiftR */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftR; path = SwiftR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D7578956FE54F221ADD238EE40DB2FA /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		3050F372F5D219270098F612DD828298 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
-		322363639CDE0DD19BA4035A8CD8A861 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		32CC6DD8F350FA8DBC207DD2B04A4C3A /* SignalRSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SignalRSwift.modulemap; sourceTree = "<group>"; };
-		34A7D92C31D7E802352E4B171CB32C21 /* SwiftSignalRClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSignalRClient.modulemap; sourceTree = "<group>"; };
-		353F788DE186606DD000ECBDA90323C9 /* HubProxyProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProxyProtocol.swift; path = "SignalR-Swift/Client/Protocols/HubProxyProtocol.swift"; sourceTree = "<group>"; };
-		384DEA7AA88C4FA09E0DF00945EB1C8E /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = "SignalR-Swift/Client/Infrastructure/Version.swift"; sourceTree = "<group>"; };
-		389AF407632D49B041B55170C7A58AC2 /* KeepAliveData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeepAliveData.swift; path = "SignalR-Swift/Client/KeepAliveData.swift"; sourceTree = "<group>"; };
-		38FEC27DB5471910D7F6442CB4E12216 /* SwiftSignalRClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.debug.xcconfig; sourceTree = "<group>"; };
-		3AC562D6FBA5620950B6C60E254B4332 /* SignalRSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalRSwift-dummy.m"; sourceTree = "<group>"; };
-		3CCE3AD3BE1950E924EDEF4694CECF21 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = "SignalR-Swift/Client/Connection.swift"; sourceTree = "<group>"; };
-		3D1C611B6B8EBEEBB6B88D3052981376 /* jquery.signalr-2.0.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.2.min.js"; sourceTree = "<group>"; };
-		3DFD38293DA01B6EDFF9E62FC2B02991 /* SignalRSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalRSwift.release.xcconfig; sourceTree = "<group>"; };
-		3FE54FEE9F0F3D722DB3781D00343FAC /* jquery.signalr-2.2.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.1.min.js"; sourceTree = "<group>"; };
-		412B042DE3C445A2478191DD0901D301 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		43B7D1F6E10F1148BAE7271B324C8224 /* SignalRSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignalRSwift-Info.plist"; sourceTree = "<group>"; };
-		45B1F822EC787CE6167018869917DBAD /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		48A24545B6CD578C2B47A433666F35D1 /* ConnectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionProtocol.swift; path = "SignalR-Swift/Client/Protocols/ConnectionProtocol.swift"; sourceTree = "<group>"; };
-		48F6F01737125E2B461678E7B649AD22 /* TransportDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportDelegate.swift; path = Sources/SignalRClient/TransportDelegate.swift; sourceTree = "<group>"; };
-		492AB708EA7CCAB66E4B169FB3648F03 /* CodableHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableHelpers.swift; path = Sources/SignalRClient/CodableHelpers.swift; sourceTree = "<group>"; };
-		4C7AFB81CCC99A2444B1E721D12E2663 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
-		56C1E1CAB8CE6DB91B92E818C217B7F5 /* ClientTransportProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientTransportProtocol.swift; path = "SignalR-Swift/Client/Protocols/ClientTransportProtocol.swift"; sourceTree = "<group>"; };
-		58109DD9D82A93DA90D1502EDE7A1987 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		58BA89D7B6A0A1E210ECE4033CD05E5B /* SwiftSignalRClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-umbrella.h"; sourceTree = "<group>"; };
-		58F8046E903A39A57EF2D6F61EBC2916 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
-		59886F47D810F1E909C3918DD57A8FA9 /* TransferFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransferFormat.swift; path = Sources/SignalRClient/TransferFormat.swift; sourceTree = "<group>"; };
+		2C03CA7D04F63A6B59654ABB04A062F0 /* HubInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubInvocation.swift; path = "SignalR-Swift/Client/Hubs/HubInvocation.swift"; sourceTree = "<group>"; };
+		2C29D3963CD9DB7C2DB10B2AE8613E88 /* JSONHubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHubProtocol.swift; path = Sources/SignalRClient/JSONHubProtocol.swift; sourceTree = "<group>"; };
+		301FB1F46C10A0ADCD404A39F3A665BA /* ConnectionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionState.swift; path = "SignalR-Swift/Client/Enums/ConnectionState.swift"; sourceTree = "<group>"; };
+		303C560057803C8589BD3A1D8289E655 /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = Sources/SignalRClient/NegotiationResponse.swift; sourceTree = "<group>"; };
+		3207878304A58FA6D68CDCEF74E21CEE /* SwiftSignalRClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.debug.xcconfig; sourceTree = "<group>"; };
+		33FE251720F2C6D6E6C85C23C8F51013 /* TransportType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportType.swift; path = Sources/SignalRClient/TransportType.swift; sourceTree = "<group>"; };
+		355FB26864B894CFD739548FC7EC310C /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		38AA52807FFDF1B55B193985973A2E04 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		3B8E303A22D9E5DC829F2C608D71C086 /* SignalRSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SignalRSwift.modulemap; sourceTree = "<group>"; };
+		3C8204CE85FEA57F71C9E818670984FE /* SwiftR.js */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftR.js; path = SwiftR/Web/SwiftR.js; sourceTree = "<group>"; };
+		3FEAC57360446EE979CF78495607E92D /* HubResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubResult.swift; path = "SignalR-Swift/Client/Hubs/HubResult.swift"; sourceTree = "<group>"; };
+		40D4789E4D1BE489034E89B0FCDF3C46 /* jquery.signalr-2.2.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.2.min.js"; sourceTree = "<group>"; };
+		42EAD296C24025BD259FC19B6F163A9F /* HubProxyProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProxyProtocol.swift; path = "SignalR-Swift/Client/Protocols/HubProxyProtocol.swift"; sourceTree = "<group>"; };
+		4309C79B38D5D12661D2ADBD4FA4825D /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = "SignalR-Swift/Client/NegotiationResponse.swift"; sourceTree = "<group>"; };
+		47A2B7A7EC916448E53C25CB0A48E50F /* jquery.signalr-2.0.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.2.min.js"; sourceTree = "<group>"; };
+		482B8C01A415FD5C232AC6500ADF5CEB /* ReconnectableConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectableConnection.swift; path = Sources/SignalRClient/ReconnectableConnection.swift; sourceTree = "<group>"; };
+		4DBD1057294AFEF118D2036EC9698C72 /* SignalRSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalRSwift.debug.xcconfig; sourceTree = "<group>"; };
+		501A47AD083C09C849E338207F9B970A /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		57414C91A7E55F089F78A5BE53076FE1 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		57F8F1F8AC6AD4925AD4C90917F1703E /* ServerSentEventsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerSentEventsTransport.swift; path = "SignalR-Swift/Transports/ServerSentEventsTransport.swift"; sourceTree = "<group>"; };
+		58884CA5CE40BD75FAF203F77454235C /* jquery.signalr-2.0.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.1.min.js"; sourceTree = "<group>"; };
+		593BF2BFB27EA304AE6CC1EAD7EBF01F /* SwiftR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftR.release.xcconfig; sourceTree = "<group>"; };
 		5A1CA0A3E8449C6835273E525F22F212 /* Pods-SignalR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR.release.xcconfig"; sourceTree = "<group>"; };
 		5A670FB813786B5E31DEB398A1CB8BD9 /* Pods-SignalR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-acknowledgements.plist"; sourceTree = "<group>"; };
 		5B7820AAEEDE596FAF775EBC0BD5D1F0 /* Pods-SignalR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-Info.plist"; sourceTree = "<group>"; };
-		5BDD1915525F498B2A634ADF7943D241 /* ServerSentEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerSentEvent.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ServerSentEvent.swift"; sourceTree = "<group>"; };
+		5BCB862D3F7EC774AF22B0EF3B889451 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		5C110B81BA838D203D6BF45DFDDE3158 /* HubConnectionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionBuilder.swift; path = Sources/SignalRClient/HubConnectionBuilder.swift; sourceTree = "<group>"; };
+		5D56DA2110E5B49357127D611BB38789 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E3BDAE758A601967A6E7AF304AA9BBC /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		60291A6A9429D31B031E93E94C374738 /* SignalRSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignalRSwift; path = SignalRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		610BBECA3222194765B19E2ED5F90665 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		61DA3568F766E53A32D9D3BF90EA4A0E /* SwiftSignalRClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSignalRClient-dummy.m"; sourceTree = "<group>"; };
-		668EF9C51E959B1A97A7653F9AE377BB /* LongPollingTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPollingTransport.swift; path = "SignalR-Swift/Transports/LongPollingTransport.swift"; sourceTree = "<group>"; };
-		67735E6418CB5E16153B114C70D730BD /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		6ACF154E161990B16978F0888A0035DF /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/SignalRClient/Transport.swift; sourceTree = "<group>"; };
-		6CE8305639CDE22FDC75F9516DF6B952 /* SwiftR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftR-Info.plist"; sourceTree = "<group>"; };
-		6E7CC251451D903EACC5323CC39E8A15 /* ServerSentEventsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerSentEventsTransport.swift; path = "SignalR-Swift/Transports/ServerSentEventsTransport.swift"; sourceTree = "<group>"; };
-		6F215A0501A75C9E386E3F553DC9D5B1 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
-		6FA99777532741DA0E284DA9A600030A /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = "SignalR-Swift/Client/Protocols/ConnectionDelegate.swift"; sourceTree = "<group>"; };
-		70901228C82BE867AE38E4885EB5BB5E /* HubConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionDelegate.swift; path = Sources/SignalRClient/HubConnectionDelegate.swift; sourceTree = "<group>"; };
+		61B12EA4C1E27772FDF480DC98F472E9 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		652A55AC6E8522CA01397DC6B0BE9ECE /* LongPollingTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPollingTransport.swift; path = Sources/SignalRClient/LongPollingTransport.swift; sourceTree = "<group>"; };
+		6661A415B8CFC3665086E75660EE8E63 /* SignalRSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalRSwift-prefix.pch"; sourceTree = "<group>"; };
+		68FE414CF96C92E12117727D3189188D /* jquery-2.1.3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery-2.1.3.min.js"; path = "SwiftR/Web/jquery-2.1.3.min.js"; sourceTree = "<group>"; };
+		6B820CA1475C53DA215136048B6E1BBC /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = "SignalR-Swift/Client/Infrastructure/Version.swift"; sourceTree = "<group>"; };
+		70019B54570DD77FBD608FF0E3908E33 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		70C2A7F499BD057700905BA9113C4DE9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		71EDE233DC7D5330B12794CFBEB4A081 /* SwiftR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftR-prefix.pch"; sourceTree = "<group>"; };
 		71FD38FC29B05C3ABAD69AA07AFF6192 /* Pods-SignalR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalR-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7364BD9715CFA69AF87672C4BE017268 /* StreamHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHandle.swift; path = Sources/SignalRClient/StreamHandle.swift; sourceTree = "<group>"; };
-		7B7840C7E4374DFFE9E493E7CF619C01 /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = "SignalR-Swift/Client/Hubs/HubConnection.swift"; sourceTree = "<group>"; };
-		7EAAED919DC0790902CF4E246829EE35 /* SignalRSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalRSwift-prefix.pch"; sourceTree = "<group>"; };
-		7FADB2DE2A37F689AE7073AD1EF27138 /* SignalRSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalRSwift.debug.xcconfig; sourceTree = "<group>"; };
-		7FD130B328760D779ADB06B291F9A2AB /* HttpClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpClientProtocol.swift; path = Sources/SignalRClient/HttpClientProtocol.swift; sourceTree = "<group>"; };
-		8065BA7AFFF41A4537C8A70A0278453F /* HubConnectionOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionOptions.swift; path = Sources/SignalRClient/HubConnectionOptions.swift; sourceTree = "<group>"; };
-		82E840716C378EE636A636ABE0E21488 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SignalRClient/Connection.swift; sourceTree = "<group>"; };
-		853CC0C6FE1A97EC55BBBDC2BF688B06 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		85B13F20B1DBBC246FEFE6F437ED2306 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		85D94FCEA0784B13B29F718724C70D8A /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/SignalRClient/HttpResponse.swift; sourceTree = "<group>"; };
+		7424B2DAF0ECB9A38659AEC7A0C8C657 /* SwiftR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftR.swift; path = SwiftR/SwiftR.swift; sourceTree = "<group>"; };
+		7524455FB35377D63E2A29A8641CE131 /* jquery.signalr-2.1.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.0.min.js"; sourceTree = "<group>"; };
+		7797B04AA53E32D7AE7B554247B6A5EC /* ExceptionHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExceptionHelper.swift; path = "SignalR-Swift/Client/Infrastructure/ExceptionHelper.swift"; sourceTree = "<group>"; };
+		7C2F5F1570D4F3F52611F67804569F71 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		7EDAAC6CF49D7A4E49472CCE761B0BEB /* WebSocketTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketTransport.swift; path = "SignalR-Swift/Transports/WebSocketTransport.swift"; sourceTree = "<group>"; };
+		81852F98326147B06895275E10AE2B89 /* DefaultHttpClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultHttpClient.swift; path = Sources/SignalRClient/DefaultHttpClient.swift; sourceTree = "<group>"; };
+		84366C768C9AB2B2E0C98D43E53588BD /* SignalRSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalRSwift-dummy.m"; sourceTree = "<group>"; };
+		860D23672EB93D4A64C43670A3507998 /* ServerInvocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerInvocationHandler.swift; path = Sources/SignalRClient/ServerInvocationHandler.swift; sourceTree = "<group>"; };
+		87D637E5D2F1C9D4416B978E4CACA681 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BA68269186E535563A274793B0567F5 /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = Sources/SignalRClient/ConnectionDelegate.swift; sourceTree = "<group>"; };
+		8940DEB93E69D364FEFCD77D1BC509DD /* SwiftR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftR-umbrella.h"; sourceTree = "<group>"; };
 		8C5C11E8AE54CE67777256460607AAEE /* Pods-SignalR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalR-dummy.m"; sourceTree = "<group>"; };
-		8D1233991D60A3C4F6ECACBE9185CA79 /* jquery.signalr-2.2.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.2.min.js"; sourceTree = "<group>"; };
-		90E7ADE6416EF4400897649FC9249E03 /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = Sources/SignalRClient/HubConnection.swift; sourceTree = "<group>"; };
-		94F8A1B606B48D0AE7D5B3FB39349FA5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		91427E72880968DF24C0E93225416465 /* ReceivedMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceivedMessage.swift; path = "SignalR-Swift/Models/ReceivedMessage.swift"; sourceTree = "<group>"; };
+		9501AE291CE2AA748C6620686151CF63 /* HubConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionDelegate.swift; path = Sources/SignalRClient/HubConnectionDelegate.swift; sourceTree = "<group>"; };
+		96C4D40E636FBDF4EC8D3B911F1E89AE /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		974463FC79878E4B363C4DED86C52E3E /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		982617DAACCCB6A31AFA21969770D889 /* jquery.signalr-2.2.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.0.min.js"; sourceTree = "<group>"; };
+		992E0D14FE5692B56359FCD10881506B /* HubProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProxy.swift; path = "SignalR-Swift/Client/Hubs/HubProxy.swift"; sourceTree = "<group>"; };
+		9ADD006AA373F91369D9A49435362B9C /* SwiftSignalRClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E6823970F2B628C4EF9543D7CC9BEE7 /* SignalRSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalRSwift-umbrella.h"; sourceTree = "<group>"; };
-		9FE54453A9DBE39D7A1016A1567BC77F /* ChunkBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChunkBuffer.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ChunkBuffer.swift"; sourceTree = "<group>"; };
-		A0B916EE308CF01E8950E5F9A3251477 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
-		A0CE10DE72B7ABA9E6CDE01C8B3CED50 /* HttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnection.swift; path = Sources/SignalRClient/HttpConnection.swift; sourceTree = "<group>"; };
-		A59697DE296D9223CC2831E2DA002BF1 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
-		A6E3E4B8A11CFE3056D8A2B5A2574A80 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		A72DE32454BFF9AC84A05AAEB587CCBF /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/SignalRClient/Logger.swift; sourceTree = "<group>"; };
-		A7D67BBC1277ABD1E318C7F59BB95084 /* SwiftR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftR-dummy.m"; sourceTree = "<group>"; };
-		A8EAFBA4B433041F16104357CE8302A9 /* LongPollingTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPollingTransport.swift; path = Sources/SignalRClient/LongPollingTransport.swift; sourceTree = "<group>"; };
-		A90EBCA936C0D32CD771DFB9FA16DD24 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		A9A6995A46BD11783DD0A5320CF0100F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		ABB7880812238D6D94B6F0610DE6A5DF /* jquery.signalr-2.0.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.0.min.js"; sourceTree = "<group>"; };
-		AE3F1ECF5E8F332492BFF3BF8018805D /* JSONHubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHubProtocol.swift; path = Sources/SignalRClient/JSONHubProtocol.swift; sourceTree = "<group>"; };
-		AEFE7901CF180A4775FA5A5F8903937F /* String+Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Dictionary.swift"; path = "SignalR-Swift/Extensions/String+Dictionary.swift"; sourceTree = "<group>"; };
-		B0EAF8E77AB870B877FFB439FB7EE210 /* ExceptionHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExceptionHelper.swift; path = "SignalR-Swift/Client/Infrastructure/ExceptionHelper.swift"; sourceTree = "<group>"; };
-		B4C68A9FE72090D0DAFBFFF061266396 /* SwiftR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftR.swift; path = SwiftR/SwiftR.swift; sourceTree = "<group>"; };
-		B65EAF8F3140AC89A5AB3837D82B3A29 /* WebsocketsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebsocketsTransport.swift; path = Sources/SignalRClient/WebsocketsTransport.swift; sourceTree = "<group>"; };
-		B6BC141F96F8442468A45F4AE7AEA24E /* SwiftR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftR.modulemap; sourceTree = "<group>"; };
-		B809068ADF7C1A5DF26F3449C5368738 /* HubConnectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionExtensions.swift; path = Sources/SignalRClient/HubConnectionExtensions.swift; sourceTree = "<group>"; };
-		BC72CAAE0A3F6F206197775B794F3CF5 /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = Sources/SignalRClient/NegotiationResponse.swift; sourceTree = "<group>"; };
-		BCF0B9CFAFAD1EA3A5869C97D07DC089 /* HubResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubResult.swift; path = "SignalR-Swift/Client/Hubs/HubResult.swift"; sourceTree = "<group>"; };
-		BD64CD10D63D19D9E149F6D14AD6B366 /* HttpConnectionOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnectionOptions.swift; path = Sources/SignalRClient/HttpConnectionOptions.swift; sourceTree = "<group>"; };
-		BEBA27D78400511FDEE56D879B2CD653 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
-		BEE688350C5E83A85C3983E61DED10F1 /* HttpTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpTransport.swift; path = "SignalR-Swift/Transports/HttpTransport.swift"; sourceTree = "<group>"; };
-		C1351B5B4197BE22ED3DF1D9CB0C6F5B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		C3224C9CCF58CF2CDB4C81E638B65CD5 /* SwiftSignalRClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-prefix.pch"; sourceTree = "<group>"; };
-		C63DEBE8BF1D9E80D15496357DB754AC /* WebSocketTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketTransport.swift; path = "SignalR-Swift/Transports/WebSocketTransport.swift"; sourceTree = "<group>"; };
-		CDBA33FE69D58FF7841138BCA97A60F8 /* SwiftR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftR-umbrella.h"; sourceTree = "<group>"; };
-		CEF01D0F65EE3EC5635A9AD02C6DBE77 /* jquery.signalr-2.0.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.1.min.js"; sourceTree = "<group>"; };
-		CFC119796A0AEDBA3A5D6C445E30C00F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		D1704766377573894ECA17E9FB51A7B0 /* TransportType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportType.swift; path = Sources/SignalRClient/TransportType.swift; sourceTree = "<group>"; };
-		D3B67FCD5F090D9197B9EFF03341D854 /* ReconnectableConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectableConnection.swift; path = Sources/SignalRClient/ReconnectableConnection.swift; sourceTree = "<group>"; };
-		D4E138875D09DDCD89FF472577CF20E4 /* jquery.signalr-2.1.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.2.min.js"; sourceTree = "<group>"; };
-		D6CDB2496A14B0D158E339D7915BF000 /* jquery.signalr-2.0.3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.3.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.3.min.js"; sourceTree = "<group>"; };
-		D8C9A8C0F9EA624EA59713FD041F9A10 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
-		D9C41DC295DCDE74DA180EBED1D51508 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
-		DB17140B78F4C874FF7897A2F83E351E /* jquery.signalr-2.1.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.0.min.js"; sourceTree = "<group>"; };
-		DBDDC1EAC76D12CE4C8FCA651B53CD17 /* HubProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProxy.swift; path = "SignalR-Swift/Client/Hubs/HubProxy.swift"; sourceTree = "<group>"; };
-		DEA3A6C4C8DFBFFD05F5D6A252096163 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		E218F0CFAB75DBFDD7274E3A949D90FE /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
-		E6F0CF79CE686EC0B0900B58F34D91A0 /* HeartbeatMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatMonitor.swift; path = "SignalR-Swift/Client/HeartbeatMonitor.swift"; sourceTree = "<group>"; };
-		E71BABC3E2D2B42A32DE3D20482B55AC /* ReceivedMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceivedMessage.swift; path = "SignalR-Swift/Models/ReceivedMessage.swift"; sourceTree = "<group>"; };
+		9DD808E3FE4D610E8940947D68F883A8 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		9F3A665CE7BD4A3FC76ED00657971D98 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		9FD03904AEE43369494E907FAFD68E78 /* Dictionary+Json.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Json.swift"; path = "SignalR-Swift/Extensions/Dictionary+Json.swift"; sourceTree = "<group>"; };
+		9FDBCE77B90488830085F5E6DA84F199 /* jquery.signalr-2.1.2.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.2.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.2.min.js"; sourceTree = "<group>"; };
+		A0DCAA02F3BAC9B9F9177F83B7408494 /* SwiftR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftR.debug.xcconfig; sourceTree = "<group>"; };
+		A108784F591332C0E1A2AB947CAF9498 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		A224724D20AF79CC7A8BC8E5F3AC00D5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		A2F48D28C19AF3C65CCD38793A3F8F18 /* HttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnection.swift; path = Sources/SignalRClient/HttpConnection.swift; sourceTree = "<group>"; };
+		A30642DC0BC33DFCF945B81AA91E0565 /* WebSocketConnectionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketConnectionInfo.swift; path = "SignalR-Swift/Transports/WebSockets/WebSocketConnectionInfo.swift"; sourceTree = "<group>"; };
+		A3B34C7745E23A8FFF4E45644E1C0FA5 /* SignalRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalRError.swift; path = Sources/SignalRClient/SignalRError.swift; sourceTree = "<group>"; };
+		A69653C127D66F5C6B03FFC554F5E8C3 /* LongPollingTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPollingTransport.swift; path = "SignalR-Swift/Transports/LongPollingTransport.swift"; sourceTree = "<group>"; };
+		A778761D5CB6CD68366EDD9C2FA2E84A /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/SignalRClient/Transport.swift; sourceTree = "<group>"; };
+		AB05FEFB07015B70453B89160D42A1B9 /* ChunkBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChunkBuffer.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ChunkBuffer.swift"; sourceTree = "<group>"; };
+		AE1BA953A46BB94255089EA3D3AE95CE /* KeepAliveData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeepAliveData.swift; path = "SignalR-Swift/Client/KeepAliveData.swift"; sourceTree = "<group>"; };
+		AE66766EA3ACE40C740D418F4E98D68E /* SwiftSignalRClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSignalRClient-dummy.m"; sourceTree = "<group>"; };
+		AEA33B7005A39FEEABAD83DCD7D076B7 /* SwiftSignalRClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-prefix.pch"; sourceTree = "<group>"; };
+		B24C783ED6862E5A847379A739F40391 /* SignalRSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignalRSwift-Info.plist"; sourceTree = "<group>"; };
+		B4F5865A7AAA53D1A12CF5C111CC769D /* jquery.signalr-2.0.3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.3.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.3.min.js"; sourceTree = "<group>"; };
+		B683B232C20F76C51C560C97D28113AE /* SwiftSignalRClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-umbrella.h"; sourceTree = "<group>"; };
+		B75656251FD5B15FFBD9986164306E5F /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		B75ADCFCFFCA4940E7F6312FA9040A80 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SignalRClient/Connection.swift; sourceTree = "<group>"; };
+		B7F1FF57096E3F522D9BC502996D1734 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		B8C77BA64E4E405E9BCFCF713292201F /* DefaultTransportFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTransportFactory.swift; path = Sources/SignalRClient/DefaultTransportFactory.swift; sourceTree = "<group>"; };
+		BA39E92AF7DD67F493C64BDD49D08472 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		BD04764760F54199CB873AB7CB6FD51A /* SwiftR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftR-Info.plist"; sourceTree = "<group>"; };
+		BF948FE49592B721126CD8F34C391A88 /* CodableHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableHelpers.swift; path = Sources/SignalRClient/CodableHelpers.swift; sourceTree = "<group>"; };
+		C235459ECE0A60425E9D91A22926D631 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		C299BCFC6CA826409B478553E2B2BB80 /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = Sources/SignalRClient/HubConnection.swift; sourceTree = "<group>"; };
+		C936867A210D11580A020B428353E925 /* SwiftR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftR-dummy.m"; sourceTree = "<group>"; };
+		C97550DA9BCBAE24A61FEECFBECE2CEE /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/SignalRClient/HttpResponse.swift; sourceTree = "<group>"; };
+		C9B5D9FAA92CE7B42598A3703FD70182 /* StreamHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHandle.swift; path = Sources/SignalRClient/StreamHandle.swift; sourceTree = "<group>"; };
+		CC7615D3F5A952863A4D4CCB0AE89472 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/SignalRClient/Util.swift; sourceTree = "<group>"; };
+		CD90EF95835DD68F4A9233E24E0D8B3F /* AutoTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTransport.swift; path = "SignalR-Swift/Transports/AutoTransport.swift"; sourceTree = "<group>"; };
+		CDC8DCA93FA7FC99D4EBBA7F6EACC2FA /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		D4341E683BA96E38C58E3E210DD79707 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		D453A6BE271820CEB16BEC278DBDBAA2 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		D6325C84CC9F93FD279584ECF69D1A8F /* SignalRSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalRSwift-umbrella.h"; sourceTree = "<group>"; };
+		D6D1277458786EB4A69E063DA4D6F66F /* ConnectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionProtocol.swift; path = "SignalR-Swift/Client/Protocols/ConnectionProtocol.swift"; sourceTree = "<group>"; };
+		D945BFCC0C5764D739730E90F6D9894B /* HttpTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpTransport.swift; path = "SignalR-Swift/Transports/HttpTransport.swift"; sourceTree = "<group>"; };
+		E171A7A365441F7A61C5E954D892F35D /* jquery.signalr-2.2.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.1.min.js"; sourceTree = "<group>"; };
+		E4F521D6F6479E84017C2D025506E08D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		E50534951D1C2584ADA8666CF4E1C481 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/SignalRClient/WebSocket.swift; sourceTree = "<group>"; };
+		E5191FF082F412E9FDCD9F86BCB57588 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E5B62D3113BD388B523C92B923EBE134 /* SwiftSignalRClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSignalRClient-Info.plist"; sourceTree = "<group>"; };
+		E63B29FDB7FEB30484CBF5B50B217765 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSignalRClient; path = SwiftSignalRClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E88641C045052B6564BF89462DF90C93 /* jquery-2.1.3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery-2.1.3.min.js"; path = "SwiftR/Web/jquery-2.1.3.min.js"; sourceTree = "<group>"; };
-		EABAC665F082480ADB01A3AD6BCAFB3A /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		E82307D0E2417D99B0F42BE239E30D6D /* SignalRSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalRSwift.release.xcconfig; sourceTree = "<group>"; };
+		EB12EFD59E0DF3AD07FF6DD8F32E81B5 /* WebsocketsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebsocketsTransport.swift; path = Sources/SignalRClient/WebsocketsTransport.swift; sourceTree = "<group>"; };
+		EB8252AB1BE6826A3CA32C12C85959D4 /* TransportDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportDelegate.swift; path = Sources/SignalRClient/TransportDelegate.swift; sourceTree = "<group>"; };
 		EBC9039F8554D2DBF3F060FAA521C8C9 /* Pods-SignalR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR.debug.xcconfig"; sourceTree = "<group>"; };
 		EBE65220A1C9773CD93CE8C993B89FDB /* Pods-SignalR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalR.modulemap"; sourceTree = "<group>"; };
-		F1922F637AA36139D4DA96D9DCE52C33 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		F43F99C95E5B123BF1A22E00EF57914F /* Dictionary+Json.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Json.swift"; path = "SignalR-Swift/Extensions/Dictionary+Json.swift"; sourceTree = "<group>"; };
-		F57AAF6694ED924D43DE86734E984533 /* SignalRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalRError.swift; path = Sources/SignalRClient/SignalRError.swift; sourceTree = "<group>"; };
-		F5A4DDECF7E5A4CBB0DCDABD13B52E97 /* jquery.signalr-2.2.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.2.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.2.0.min.js"; sourceTree = "<group>"; };
-		F646D412D835DBF1FDE20CBC76D14F52 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
-		FA8EF2B1391B63267E8A3E01B3EB47D4 /* AutoTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTransport.swift; path = "SignalR-Swift/Transports/AutoTransport.swift"; sourceTree = "<group>"; };
-		FAD3AED77673E15EACF69644666BF911 /* HubConnectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionProtocol.swift; path = "SignalR-Swift/Client/Protocols/HubConnectionProtocol.swift"; sourceTree = "<group>"; };
-		FDBCD1BA545A4E814A34C8D211C538F7 /* HubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProtocol.swift; path = Sources/SignalRClient/HubProtocol.swift; sourceTree = "<group>"; };
-		FECD61711D2705E33E78C94382867CFE /* ReconnectPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectPolicy.swift; path = Sources/SignalRClient/ReconnectPolicy.swift; sourceTree = "<group>"; };
+		EE72F8DCA9CA907145A85044DDBE181F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		EEFB656C88F27A03C8391139B9CB33F1 /* SwiftSignalRClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSignalRClient.modulemap; sourceTree = "<group>"; };
+		F23773EBFBE09CCB27B4E2B5D939D490 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		F24B2C974124A421EE326E29E7327A29 /* TransferFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransferFormat.swift; path = Sources/SignalRClient/TransferFormat.swift; sourceTree = "<group>"; };
+		F2C7F5C5C10B5CCA06E15DCB47F883A7 /* jquery.signalr-2.1.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.1.1.min.js"; path = "SwiftR/Web/jquery.signalr-2.1.1.min.js"; sourceTree = "<group>"; };
+		FBEF79961C5A770F27E3FEB4E1233811 /* jquery.signalr-2.0.0.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jquery.signalr-2.0.0.min.js"; path = "SwiftR/Web/jquery.signalr-2.0.0.min.js"; sourceTree = "<group>"; };
+		FC9D0D078426552F0282BBCA84B47136 /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = "SignalR-Swift/Client/Protocols/ConnectionDelegate.swift"; sourceTree = "<group>"; };
+		FD9C7F129BBB186CDD82D36F2D219AE9 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpClientProtocol.swift; path = Sources/SignalRClient/HttpClientProtocol.swift; sourceTree = "<group>"; };
+		FDA69A5502AB7C1854A8AF5ACEF95535 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = "SignalR-Swift/Client/Connection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,19 +327,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B914903331C45608428B8207CFE72AA /* Frameworks */ = {
+		51E514F15FE6223FFB36BC7F0E47CA30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9670246F6422DFF3E476FC3ED0D73410 /* Foundation.framework in Frameworks */,
+				21C6A07BD3D221155ED1D54D8CB87953 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		700BD4C08574AC37434F526446FAB33D /* Frameworks */ = {
+		606D7BC2CD512FE2A446A2E8448B618E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031409D90094F5F84945FCDC134682C7 /* Foundation.framework in Frameworks */,
+				FD143A03B1472F53302DA75163C8AD7D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,19 +370,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DA92F8DF87FBB07F1AD70CB2E611DA2 /* Support Files */ = {
+		24BD114C73BB20CB37AFE4D83E346318 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E218F0CFAB75DBFDD7274E3A949D90FE /* Starscream.modulemap */,
-				A59697DE296D9223CC2831E2DA002BF1 /* Starscream-dummy.m */,
-				D9C41DC295DCDE74DA180EBED1D51508 /* Starscream-Info.plist */,
-				BEBA27D78400511FDEE56D879B2CD653 /* Starscream-prefix.pch */,
-				3050F372F5D219270098F612DD828298 /* Starscream-umbrella.h */,
-				6F215A0501A75C9E386E3F553DC9D5B1 /* Starscream.debug.xcconfig */,
-				4C7AFB81CCC99A2444B1E721D12E2663 /* Starscream.release.xcconfig */,
+				68FE414CF96C92E12117727D3189188D /* jquery-2.1.3.min.js */,
+				FBEF79961C5A770F27E3FEB4E1233811 /* jquery.signalr-2.0.0.min.js */,
+				58884CA5CE40BD75FAF203F77454235C /* jquery.signalr-2.0.1.min.js */,
+				47A2B7A7EC916448E53C25CB0A48E50F /* jquery.signalr-2.0.2.min.js */,
+				B4F5865A7AAA53D1A12CF5C111CC769D /* jquery.signalr-2.0.3.min.js */,
+				7524455FB35377D63E2A29A8641CE131 /* jquery.signalr-2.1.0.min.js */,
+				F2C7F5C5C10B5CCA06E15DCB47F883A7 /* jquery.signalr-2.1.1.min.js */,
+				9FDBCE77B90488830085F5E6DA84F199 /* jquery.signalr-2.1.2.min.js */,
+				982617DAACCCB6A31AFA21969770D889 /* jquery.signalr-2.2.0.min.js */,
+				E171A7A365441F7A61C5E954D892F35D /* jquery.signalr-2.2.1.min.js */,
+				40D4789E4D1BE489034E89B0FCDF3C46 /* jquery.signalr-2.2.2.min.js */,
+				3C8204CE85FEA57F71C9E818670984FE /* SwiftR.js */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		32524BBD2B12F9115DF48C084D1E9865 /* Targets Support Files */ = {
@@ -391,30 +397,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		37575EA9C10BEE0ABE7E6F4877A32015 /* SwiftR */ = {
+		41021489B9D7D9BA628DA75AB86703F1 /* SwiftSignalRClient */ = {
 			isa = PBXGroup;
 			children = (
-				B4C68A9FE72090D0DAFBFFF061266396 /* SwiftR.swift */,
-				CA0D65A00119044F319631771E23F9E6 /* Resources */,
-				A2EA975B59992221037775B367014F7A /* Support Files */,
+				BF948FE49592B721126CD8F34C391A88 /* CodableHelpers.swift */,
+				B75ADCFCFFCA4940E7F6312FA9040A80 /* Connection.swift */,
+				197B504FCDD0997A630BC46F3CE7A32C /* ConnectionDelegate.swift */,
+				81852F98326147B06895275E10AE2B89 /* DefaultHttpClient.swift */,
+				B8C77BA64E4E405E9BCFCF713292201F /* DefaultTransportFactory.swift */,
+				1340017B1B9C71BD38CA47592FE5B68B /* HandshakeProtocol.swift */,
+				FD9C7F129BBB186CDD82D36F2D219AE9 /* HttpClientProtocol.swift */,
+				A2F48D28C19AF3C65CCD38793A3F8F18 /* HttpConnection.swift */,
+				0C5E8EA9681BAEBA831CEE4D3A70208B /* HttpConnectionOptions.swift */,
+				C97550DA9BCBAE24A61FEECFBECE2CEE /* HttpResponse.swift */,
+				C299BCFC6CA826409B478553E2B2BB80 /* HubConnection.swift */,
+				5C110B81BA838D203D6BF45DFDDE3158 /* HubConnectionBuilder.swift */,
+				9501AE291CE2AA748C6620686151CF63 /* HubConnectionDelegate.swift */,
+				0D627F18769C3BC7F5F1FE1F51CFA1A4 /* HubConnectionExtensions.swift */,
+				0824099FC45683DD0D183982C897D00F /* HubProtocol.swift */,
+				2C29D3963CD9DB7C2DB10B2AE8613E88 /* JSONHubProtocol.swift */,
+				22CC382BD43FBB89598A604C7C856C09 /* Logger.swift */,
+				652A55AC6E8522CA01397DC6B0BE9ECE /* LongPollingTransport.swift */,
+				303C560057803C8589BD3A1D8289E655 /* NegotiationResponse.swift */,
+				482B8C01A415FD5C232AC6500ADF5CEB /* ReconnectableConnection.swift */,
+				177DF33392111F22535346284FE68BE1 /* ReconnectPolicy.swift */,
+				860D23672EB93D4A64C43670A3507998 /* ServerInvocationHandler.swift */,
+				A3B34C7745E23A8FFF4E45644E1C0FA5 /* SignalRError.swift */,
+				C9B5D9FAA92CE7B42598A3703FD70182 /* StreamHandle.swift */,
+				F24B2C974124A421EE326E29E7327A29 /* TransferFormat.swift */,
+				A778761D5CB6CD68366EDD9C2FA2E84A /* Transport.swift */,
+				EB8252AB1BE6826A3CA32C12C85959D4 /* TransportDelegate.swift */,
+				33FE251720F2C6D6E6C85C23C8F51013 /* TransportType.swift */,
+				CC7615D3F5A952863A4D4CCB0AE89472 /* Util.swift */,
+				E50534951D1C2584ADA8666CF4E1C481 /* WebSocket.swift */,
+				EB12EFD59E0DF3AD07FF6DD8F32E81B5 /* WebsocketsTransport.swift */,
+				87777BE025822FA2258CC6C131EF7557 /* Support Files */,
 			);
-			name = SwiftR;
-			path = SwiftR;
-			sourceTree = "<group>";
-		};
-		49119BBAFC562089AF10C9160C16F83B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				32CC6DD8F350FA8DBC207DD2B04A4C3A /* SignalRSwift.modulemap */,
-				3AC562D6FBA5620950B6C60E254B4332 /* SignalRSwift-dummy.m */,
-				43B7D1F6E10F1148BAE7271B324C8224 /* SignalRSwift-Info.plist */,
-				7EAAED919DC0790902CF4E246829EE35 /* SignalRSwift-prefix.pch */,
-				9E6823970F2B628C4EF9543D7CC9BEE7 /* SignalRSwift-umbrella.h */,
-				7FADB2DE2A37F689AE7073AD1EF27138 /* SignalRSwift.debug.xcconfig */,
-				3DFD38293DA01B6EDFF9E62FC2B02991 /* SignalRSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SignalRSwift";
+			name = SwiftSignalRClient;
+			path = SwiftSignalRClient;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -423,42 +443,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		589AFC88EF11D0AD86856857F39CB498 /* SignalRSwift */ = {
-			isa = PBXGroup;
-			children = (
-				FA8EF2B1391B63267E8A3E01B3EB47D4 /* AutoTransport.swift */,
-				9FE54453A9DBE39D7A1016A1567BC77F /* ChunkBuffer.swift */,
-				56C1E1CAB8CE6DB91B92E818C217B7F5 /* ClientTransportProtocol.swift */,
-				3CCE3AD3BE1950E924EDEF4694CECF21 /* Connection.swift */,
-				6FA99777532741DA0E284DA9A600030A /* ConnectionDelegate.swift */,
-				48A24545B6CD578C2B47A433666F35D1 /* ConnectionProtocol.swift */,
-				277A3C78A07FD7DF8339BBFE51ECEE94 /* ConnectionState.swift */,
-				F43F99C95E5B123BF1A22E00EF57914F /* Dictionary+Json.swift */,
-				B0EAF8E77AB870B877FFB439FB7EE210 /* ExceptionHelper.swift */,
-				E6F0CF79CE686EC0B0900B58F34D91A0 /* HeartbeatMonitor.swift */,
-				BEE688350C5E83A85C3983E61DED10F1 /* HttpTransport.swift */,
-				7B7840C7E4374DFFE9E493E7CF619C01 /* HubConnection.swift */,
-				FAD3AED77673E15EACF69644666BF911 /* HubConnectionProtocol.swift */,
-				19A6FF7AC068170B8B00EF75369EA616 /* HubInvocation.swift */,
-				DBDDC1EAC76D12CE4C8FCA651B53CD17 /* HubProxy.swift */,
-				353F788DE186606DD000ECBDA90323C9 /* HubProxyProtocol.swift */,
-				BCF0B9CFAFAD1EA3A5869C97D07DC089 /* HubResult.swift */,
-				389AF407632D49B041B55170C7A58AC2 /* KeepAliveData.swift */,
-				668EF9C51E959B1A97A7653F9AE377BB /* LongPollingTransport.swift */,
-				021DC8770986CC19F0113C2A0F96BB65 /* NegotiationResponse.swift */,
-				E71BABC3E2D2B42A32DE3D20482B55AC /* ReceivedMessage.swift */,
-				5BDD1915525F498B2A634ADF7943D241 /* ServerSentEvent.swift */,
-				6E7CC251451D903EACC5323CC39E8A15 /* ServerSentEventsTransport.swift */,
-				AEFE7901CF180A4775FA5A5F8903937F /* String+Dictionary.swift */,
-				384DEA7AA88C4FA09E0DF00945EB1C8E /* Version.swift */,
-				290FAEBE46E3F8E60014633E52D798CF /* WebSocketConnectionInfo.swift */,
-				C63DEBE8BF1D9E80D15496357DB754AC /* WebSocketTransport.swift */,
-				49119BBAFC562089AF10C9160C16F83B /* Support Files */,
-			);
-			name = SignalRSwift;
-			path = SignalRSwift;
 			sourceTree = "<group>";
 		};
 		60A2B7F8AB85DC23FB7CCED9A4807588 /* Products */ = {
@@ -491,104 +475,80 @@
 			path = "Target Support Files/Pods-SignalR";
 			sourceTree = "<group>";
 		};
-		7FAAA417613774BA2AAF301092F03EB1 /* Alamofire */ = {
+		87777BE025822FA2258CC6C131EF7557 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				05B5EA936A916D76E9A55834366285C8 /* AFError.swift */,
-				CFC119796A0AEDBA3A5D6C445E30C00F /* Alamofire.swift */,
-				2751F203697A891393DA813442EE43EE /* DispatchQueue+Alamofire.swift */,
-				85B13F20B1DBBC246FEFE6F437ED2306 /* MultipartFormData.swift */,
-				DEA3A6C4C8DFBFFD05F5D6A252096163 /* NetworkReachabilityManager.swift */,
-				322363639CDE0DD19BA4035A8CD8A861 /* Notifications.swift */,
-				412B042DE3C445A2478191DD0901D301 /* ParameterEncoding.swift */,
-				58109DD9D82A93DA90D1502EDE7A1987 /* Request.swift */,
-				C1351B5B4197BE22ED3DF1D9CB0C6F5B /* Response.swift */,
-				08E05DB12003906F861C4670FB489688 /* ResponseSerialization.swift */,
-				A9A6995A46BD11783DD0A5320CF0100F /* Result.swift */,
-				853CC0C6FE1A97EC55BBBDC2BF688B06 /* ServerTrustPolicy.swift */,
-				A6E3E4B8A11CFE3056D8A2B5A2574A80 /* SessionDelegate.swift */,
-				0623AF6DBA692A7A687EF7A341BF19A7 /* SessionManager.swift */,
-				EABAC665F082480ADB01A3AD6BCAFB3A /* TaskDelegate.swift */,
-				610BBECA3222194765B19E2ED5F90665 /* Timeline.swift */,
-				67735E6418CB5E16153B114C70D730BD /* Validation.swift */,
-				FFC975DF5ACE0260F433E66936B91B95 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		9C66185F2E9C93C6A81D155F20C75F4A /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				D8C9A8C0F9EA624EA59713FD041F9A10 /* Compression.swift */,
-				09002B8FC69FC3F8D176F232187D19BC /* SSLClientCertificate.swift */,
-				0D637C66D015392764473D383F5CEDF3 /* SSLSecurity.swift */,
-				F646D412D835DBF1FDE20CBC76D14F52 /* WebSocket.swift */,
-				0DA92F8DF87FBB07F1AD70CB2E611DA2 /* Support Files */,
-			);
-			name = Starscream;
-			path = Starscream;
-			sourceTree = "<group>";
-		};
-		A2EA975B59992221037775B367014F7A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6BC141F96F8442468A45F4AE7AEA24E /* SwiftR.modulemap */,
-				A7D67BBC1277ABD1E318C7F59BB95084 /* SwiftR-dummy.m */,
-				6CE8305639CDE22FDC75F9516DF6B952 /* SwiftR-Info.plist */,
-				0BC7F0917E0AB39AC514A008E76C12C4 /* SwiftR-prefix.pch */,
-				CDBA33FE69D58FF7841138BCA97A60F8 /* SwiftR-umbrella.h */,
-				0A1A4D397B5BA04C8B2F57DDBCC987B6 /* SwiftR.debug.xcconfig */,
-				13467BFDB5B5A5714C2AC26B01E86D36 /* SwiftR.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftR";
-			sourceTree = "<group>";
-		};
-		AA6ED4A5FB15ED20BF547B950321AB58 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7FAAA417613774BA2AAF301092F03EB1 /* Alamofire */,
-				589AFC88EF11D0AD86856857F39CB498 /* SignalRSwift */,
-				9C66185F2E9C93C6A81D155F20C75F4A /* Starscream */,
-				37575EA9C10BEE0ABE7E6F4877A32015 /* SwiftR */,
-				E8912468696E63B2B7B01EAA7CFB7238 /* SwiftSignalRClient */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B8FB1C949256043308FEC4ECB67B6325 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				34A7D92C31D7E802352E4B171CB32C21 /* SwiftSignalRClient.modulemap */,
-				61DA3568F766E53A32D9D3BF90EA4A0E /* SwiftSignalRClient-dummy.m */,
-				15B31E1DD348FEE70DC8361A864A9AFD /* SwiftSignalRClient-Info.plist */,
-				C3224C9CCF58CF2CDB4C81E638B65CD5 /* SwiftSignalRClient-prefix.pch */,
-				58BA89D7B6A0A1E210ECE4033CD05E5B /* SwiftSignalRClient-umbrella.h */,
-				38FEC27DB5471910D7F6442CB4E12216 /* SwiftSignalRClient.debug.xcconfig */,
-				20FB0BC7043C49ED5C1DD36447B23FBE /* SwiftSignalRClient.release.xcconfig */,
+				EEFB656C88F27A03C8391139B9CB33F1 /* SwiftSignalRClient.modulemap */,
+				AE66766EA3ACE40C740D418F4E98D68E /* SwiftSignalRClient-dummy.m */,
+				E5B62D3113BD388B523C92B923EBE134 /* SwiftSignalRClient-Info.plist */,
+				AEA33B7005A39FEEABAD83DCD7D076B7 /* SwiftSignalRClient-prefix.pch */,
+				B683B232C20F76C51C560C97D28113AE /* SwiftSignalRClient-umbrella.h */,
+				3207878304A58FA6D68CDCEF74E21CEE /* SwiftSignalRClient.debug.xcconfig */,
+				9ADD006AA373F91369D9A49435362B9C /* SwiftSignalRClient.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftSignalRClient";
 			sourceTree = "<group>";
 		};
-		CA0D65A00119044F319631771E23F9E6 /* Resources */ = {
+		A37658525BF07E3A2D30C2302820A009 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E88641C045052B6564BF89462DF90C93 /* jquery-2.1.3.min.js */,
-				ABB7880812238D6D94B6F0610DE6A5DF /* jquery.signalr-2.0.0.min.js */,
-				CEF01D0F65EE3EC5635A9AD02C6DBE77 /* jquery.signalr-2.0.1.min.js */,
-				3D1C611B6B8EBEEBB6B88D3052981376 /* jquery.signalr-2.0.2.min.js */,
-				D6CDB2496A14B0D158E339D7915BF000 /* jquery.signalr-2.0.3.min.js */,
-				DB17140B78F4C874FF7897A2F83E351E /* jquery.signalr-2.1.0.min.js */,
-				2AF1189A673A01E6F674C540FDC8A51B /* jquery.signalr-2.1.1.min.js */,
-				D4E138875D09DDCD89FF472577CF20E4 /* jquery.signalr-2.1.2.min.js */,
-				F5A4DDECF7E5A4CBB0DCDABD13B52E97 /* jquery.signalr-2.2.0.min.js */,
-				3FE54FEE9F0F3D722DB3781D00343FAC /* jquery.signalr-2.2.1.min.js */,
-				8D1233991D60A3C4F6ECACBE9185CA79 /* jquery.signalr-2.2.2.min.js */,
-				106365D0877A2F6AA16D70645546D81F /* SwiftR.js */,
+				EDC71E1AF6591D4EB5DC7C0374D75DB4 /* Alamofire */,
+				C8EE201335D94BD66C24D7C3533B3E53 /* SignalRSwift */,
+				AE310A4E81C2637AC1CFBA0583AC25CF /* Starscream */,
+				E5AB5D475793CDF03E95B5F28067B0E8 /* SwiftR */,
+				41021489B9D7D9BA628DA75AB86703F1 /* SwiftSignalRClient */,
 			);
-			name = Resources;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE310A4E81C2637AC1CFBA0583AC25CF /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8DCA93FA7FC99D4EBBA7F6EACC2FA /* Compression.swift */,
+				D4341E683BA96E38C58E3E210DD79707 /* SSLClientCertificate.swift */,
+				C235459ECE0A60425E9D91A22926D631 /* SSLSecurity.swift */,
+				355FB26864B894CFD739548FC7EC310C /* WebSocket.swift */,
+				E2AE43A3621FE2F6D3712398A36EBCDC /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		C8EE201335D94BD66C24D7C3533B3E53 /* SignalRSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CD90EF95835DD68F4A9233E24E0D8B3F /* AutoTransport.swift */,
+				AB05FEFB07015B70453B89160D42A1B9 /* ChunkBuffer.swift */,
+				23620F14D90A9049401686683EBD4095 /* ClientTransportProtocol.swift */,
+				FDA69A5502AB7C1854A8AF5ACEF95535 /* Connection.swift */,
+				FC9D0D078426552F0282BBCA84B47136 /* ConnectionDelegate.swift */,
+				D6D1277458786EB4A69E063DA4D6F66F /* ConnectionProtocol.swift */,
+				301FB1F46C10A0ADCD404A39F3A665BA /* ConnectionState.swift */,
+				9FD03904AEE43369494E907FAFD68E78 /* Dictionary+Json.swift */,
+				7797B04AA53E32D7AE7B554247B6A5EC /* ExceptionHelper.swift */,
+				0A15A1D01E703117DD6AA768B7472616 /* HeartbeatMonitor.swift */,
+				D945BFCC0C5764D739730E90F6D9894B /* HttpTransport.swift */,
+				2AF9F636682717B01C8C7CDC89DC734D /* HubConnection.swift */,
+				1028894D9C0E6734FF6E77ABD54D0485 /* HubConnectionProtocol.swift */,
+				2C03CA7D04F63A6B59654ABB04A062F0 /* HubInvocation.swift */,
+				992E0D14FE5692B56359FCD10881506B /* HubProxy.swift */,
+				42EAD296C24025BD259FC19B6F163A9F /* HubProxyProtocol.swift */,
+				3FEAC57360446EE979CF78495607E92D /* HubResult.swift */,
+				AE1BA953A46BB94255089EA3D3AE95CE /* KeepAliveData.swift */,
+				A69653C127D66F5C6B03FFC554F5E8C3 /* LongPollingTransport.swift */,
+				4309C79B38D5D12661D2ADBD4FA4825D /* NegotiationResponse.swift */,
+				91427E72880968DF24C0E93225416465 /* ReceivedMessage.swift */,
+				1B77DF103F5909C42036762B6142C1D3 /* ServerSentEvent.swift */,
+				57F8F1F8AC6AD4925AD4C90917F1703E /* ServerSentEventsTransport.swift */,
+				159ABDA4F395EE280174EBA073AF4F80 /* String+Dictionary.swift */,
+				6B820CA1475C53DA215136048B6E1BBC /* Version.swift */,
+				A30642DC0BC33DFCF945B81AA91E0565 /* WebSocketConnectionInfo.swift */,
+				7EDAAC6CF49D7A4E49472CCE761B0BEB /* WebSocketTransport.swift */,
+				F7C9CADE48EF0EEEC10F2D2A93C3095A /* Support Files */,
+			);
+			name = SignalRSwift;
+			path = SignalRSwift;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -596,7 +556,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				AA6ED4A5FB15ED20BF547B950321AB58 /* Pods */,
+				A37658525BF07E3A2D30C2302820A009 /* Pods */,
 				60A2B7F8AB85DC23FB7CCED9A4807588 /* Products */,
 				32524BBD2B12F9115DF48C084D1E9865 /* Targets Support Files */,
 			);
@@ -610,68 +570,111 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8912468696E63B2B7B01EAA7CFB7238 /* SwiftSignalRClient */ = {
+		D986BAE842C624399871B5DE83C09CE3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				492AB708EA7CCAB66E4B169FB3648F03 /* CodableHelpers.swift */,
-				82E840716C378EE636A636ABE0E21488 /* Connection.swift */,
-				8BA68269186E535563A274793B0567F5 /* ConnectionDelegate.swift */,
-				00C8569166EDBB2E1697C80FC8331A6F /* DefaultHttpClient.swift */,
-				020744164D1B2C99AC777074ED03915D /* DefaultTransportFactory.swift */,
-				19C715B30A99720FC26F1543250C54FF /* HandshakeProtocol.swift */,
-				7FD130B328760D779ADB06B291F9A2AB /* HttpClientProtocol.swift */,
-				A0CE10DE72B7ABA9E6CDE01C8B3CED50 /* HttpConnection.swift */,
-				BD64CD10D63D19D9E149F6D14AD6B366 /* HttpConnectionOptions.swift */,
-				85D94FCEA0784B13B29F718724C70D8A /* HttpResponse.swift */,
-				90E7ADE6416EF4400897649FC9249E03 /* HubConnection.swift */,
-				00F96FCCC1EC05F390B232AF2B8FC17C /* HubConnectionBuilder.swift */,
-				70901228C82BE867AE38E4885EB5BB5E /* HubConnectionDelegate.swift */,
-				B809068ADF7C1A5DF26F3449C5368738 /* HubConnectionExtensions.swift */,
-				8065BA7AFFF41A4537C8A70A0278453F /* HubConnectionOptions.swift */,
-				FDBCD1BA545A4E814A34C8D211C538F7 /* HubProtocol.swift */,
-				AE3F1ECF5E8F332492BFF3BF8018805D /* JSONHubProtocol.swift */,
-				A72DE32454BFF9AC84A05AAEB587CCBF /* Logger.swift */,
-				A8EAFBA4B433041F16104357CE8302A9 /* LongPollingTransport.swift */,
-				BC72CAAE0A3F6F206197775B794F3CF5 /* NegotiationResponse.swift */,
-				D3B67FCD5F090D9197B9EFF03341D854 /* ReconnectableConnection.swift */,
-				FECD61711D2705E33E78C94382867CFE /* ReconnectPolicy.swift */,
-				1A379354BAFDDF4C4DA2915D07354AC1 /* ServerInvocationHandler.swift */,
-				F57AAF6694ED924D43DE86734E984533 /* SignalRError.swift */,
-				7364BD9715CFA69AF87672C4BE017268 /* StreamHandle.swift */,
-				59886F47D810F1E909C3918DD57A8FA9 /* TransferFormat.swift */,
-				6ACF154E161990B16978F0888A0035DF /* Transport.swift */,
-				48F6F01737125E2B461678E7B649AD22 /* TransportDelegate.swift */,
-				D1704766377573894ECA17E9FB51A7B0 /* TransportType.swift */,
-				B65EAF8F3140AC89A5AB3837D82B3A29 /* WebsocketsTransport.swift */,
-				B8FB1C949256043308FEC4ECB67B6325 /* Support Files */,
-			);
-			name = SwiftSignalRClient;
-			path = SwiftSignalRClient;
-			sourceTree = "<group>";
-		};
-		FFC975DF5ACE0260F433E66936B91B95 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				94F8A1B606B48D0AE7D5B3FB39349FA5 /* Alamofire.modulemap */,
-				A90EBCA936C0D32CD771DFB9FA16DD24 /* Alamofire-dummy.m */,
-				F1922F637AA36139D4DA96D9DCE52C33 /* Alamofire-Info.plist */,
-				2D7578956FE54F221ADD238EE40DB2FA /* Alamofire-prefix.pch */,
-				45B1F822EC787CE6167018869917DBAD /* Alamofire-umbrella.h */,
-				A0B916EE308CF01E8950E5F9A3251477 /* Alamofire.debug.xcconfig */,
-				58F8046E903A39A57EF2D6F61EBC2916 /* Alamofire.release.xcconfig */,
+				7C2F5F1570D4F3F52611F67804569F71 /* Alamofire.modulemap */,
+				1FDC4A86A247CE3DC0B99512208AB252 /* Alamofire-dummy.m */,
+				501A47AD083C09C849E338207F9B970A /* Alamofire-Info.plist */,
+				5BCB862D3F7EC774AF22B0EF3B889451 /* Alamofire-prefix.pch */,
+				96C4D40E636FBDF4EC8D3B911F1E89AE /* Alamofire-umbrella.h */,
+				9DD808E3FE4D610E8940947D68F883A8 /* Alamofire.debug.xcconfig */,
+				1AF238402D4D9BCC5853F45454996432 /* Alamofire.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		E2AE43A3621FE2F6D3712398A36EBCDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70019B54570DD77FBD608FF0E3908E33 /* Starscream.modulemap */,
+				57414C91A7E55F089F78A5BE53076FE1 /* Starscream-dummy.m */,
+				BA39E92AF7DD67F493C64BDD49D08472 /* Starscream-Info.plist */,
+				87D637E5D2F1C9D4416B978E4CACA681 /* Starscream-prefix.pch */,
+				B75656251FD5B15FFBD9986164306E5F /* Starscream-umbrella.h */,
+				5D56DA2110E5B49357127D611BB38789 /* Starscream.debug.xcconfig */,
+				2787DF2FBBE9E86B49D480A1E8823355 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		E35039B6B65C8E78B4BA77904B0209D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				171122EE1C3F240D4F12CE53C4539AE5 /* SwiftR.modulemap */,
+				C936867A210D11580A020B428353E925 /* SwiftR-dummy.m */,
+				BD04764760F54199CB873AB7CB6FD51A /* SwiftR-Info.plist */,
+				71EDE233DC7D5330B12794CFBEB4A081 /* SwiftR-prefix.pch */,
+				8940DEB93E69D364FEFCD77D1BC509DD /* SwiftR-umbrella.h */,
+				A0DCAA02F3BAC9B9F9177F83B7408494 /* SwiftR.debug.xcconfig */,
+				593BF2BFB27EA304AE6CC1EAD7EBF01F /* SwiftR.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftR";
+			sourceTree = "<group>";
+		};
+		E5AB5D475793CDF03E95B5F28067B0E8 /* SwiftR */ = {
+			isa = PBXGroup;
+			children = (
+				7424B2DAF0ECB9A38659AEC7A0C8C657 /* SwiftR.swift */,
+				24BD114C73BB20CB37AFE4D83E346318 /* Resources */,
+				E35039B6B65C8E78B4BA77904B0209D6 /* Support Files */,
+			);
+			name = SwiftR;
+			path = SwiftR;
+			sourceTree = "<group>";
+		};
+		EDC71E1AF6591D4EB5DC7C0374D75DB4 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				974463FC79878E4B363C4DED86C52E3E /* AFError.swift */,
+				E5191FF082F412E9FDCD9F86BCB57588 /* Alamofire.swift */,
+				E63B29FDB7FEB30484CBF5B50B217765 /* DispatchQueue+Alamofire.swift */,
+				5E3BDAE758A601967A6E7AF304AA9BBC /* MultipartFormData.swift */,
+				61B12EA4C1E27772FDF480DC98F472E9 /* NetworkReachabilityManager.swift */,
+				D453A6BE271820CEB16BEC278DBDBAA2 /* Notifications.swift */,
+				70C2A7F499BD057700905BA9113C4DE9 /* ParameterEncoding.swift */,
+				10550FC9EAA4A979983C0B252A538175 /* Request.swift */,
+				B7F1FF57096E3F522D9BC502996D1734 /* Response.swift */,
+				F23773EBFBE09CCB27B4E2B5D939D490 /* ResponseSerialization.swift */,
+				E4F521D6F6479E84017C2D025506E08D /* Result.swift */,
+				38AA52807FFDF1B55B193985973A2E04 /* ServerTrustPolicy.swift */,
+				9F3A665CE7BD4A3FC76ED00657971D98 /* SessionDelegate.swift */,
+				0C9309C79FD909AD25432283C10B5059 /* SessionManager.swift */,
+				A108784F591332C0E1A2AB947CAF9498 /* TaskDelegate.swift */,
+				EE72F8DCA9CA907145A85044DDBE181F /* Timeline.swift */,
+				A224724D20AF79CC7A8BC8E5F3AC00D5 /* Validation.swift */,
+				D986BAE842C624399871B5DE83C09CE3 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		F7C9CADE48EF0EEEC10F2D2A93C3095A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E303A22D9E5DC829F2C608D71C086 /* SignalRSwift.modulemap */,
+				84366C768C9AB2B2E0C98D43E53588BD /* SignalRSwift-dummy.m */,
+				B24C783ED6862E5A847379A739F40391 /* SignalRSwift-Info.plist */,
+				6661A415B8CFC3665086E75660EE8E63 /* SignalRSwift-prefix.pch */,
+				D6325C84CC9F93FD279584ECF69D1A8F /* SignalRSwift-umbrella.h */,
+				4DBD1057294AFEF118D2036EC9698C72 /* SignalRSwift.debug.xcconfig */,
+				E82307D0E2417D99B0F42BE239E30D6D /* SignalRSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SignalRSwift";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E4478315D2160F002EE43F3AC3D6761 /* Headers */ = {
+		3FBCEBDB5BEDC78F24CC6D2D738FEAEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4A16C9C76F8BC21A6579572FE1AE9C /* SwiftSignalRClient-umbrella.h in Headers */,
+				F1B0ACB1C2E198F56495C0C43D57AB0D /* Starscream-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,11 +710,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D7EEDD08FEB7C09ACDF91290721C15 /* Headers */ = {
+		F5D795691F5A8F8088BE2C3B09452A69 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346078B53BFD4B594DEAB51B5E4DDAC4 /* Starscream-umbrella.h in Headers */,
+				274F6D66C489946E3F675746F78646E4 /* SwiftSignalRClient-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,8 +733,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				ABECD45A07C97946518D8A8FECA9B133 /* PBXTargetDependency */,
-				5250E00B1D21CB6C9BEABB9C785D644F /* PBXTargetDependency */,
+				D1CC033DBB3B5C310FC45A36C82ABC4A /* PBXTargetDependency */,
+				401AC536CBF99F757791FF61CDEDDF69 /* PBXTargetDependency */,
 			);
 			name = SignalRSwift;
 			productName = SignalRSwift;
@@ -740,12 +743,12 @@
 		};
 		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B5CD05B74706A4DAFCFC8F330BD1A87 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildConfigurationList = B9BF0C9FD1582489E5DF418C586E16E5 /* Build configuration list for PBXNativeTarget "Starscream" */;
 			buildPhases = (
-				F3D7EEDD08FEB7C09ACDF91290721C15 /* Headers */,
-				237B183CA57757269271BD0CAF72808D /* Sources */,
-				700BD4C08574AC37434F526446FAB33D /* Frameworks */,
-				4066D3FFAE721E4FE59E248721BDF5A7 /* Resources */,
+				3FBCEBDB5BEDC78F24CC6D2D738FEAEC /* Headers */,
+				0C5ABE9B57BA69F824441D4EB988723B /* Sources */,
+				606D7BC2CD512FE2A446A2E8448B618E /* Frameworks */,
+				B9CDE2745D79825127D073DDE6775951 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -758,12 +761,12 @@
 		};
 		C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25F66423154A2F832D50D7D0B9BE4286 /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */;
+			buildConfigurationList = CA67557D692C0128BCE13E8C80E1529F /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */;
 			buildPhases = (
-				0E4478315D2160F002EE43F3AC3D6761 /* Headers */,
-				B5D1161AF4D71CB8065CD5DB5FE716D1 /* Sources */,
-				6B914903331C45608428B8207CFE72AA /* Frameworks */,
-				72B2C38A8496669E0C9761DA86464FB3 /* Resources */,
+				F5D795691F5A8F8088BE2C3B09452A69 /* Headers */,
+				C5F16C9FE53F0C6BAA1418129DA80343 /* Sources */,
+				51E514F15FE6223FFB36BC7F0E47CA30 /* Frameworks */,
+				C048166248E689E522D02A4ABFC1DF40 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -786,11 +789,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				F18F7D581BF4E246A11B31624DFDF43A /* PBXTargetDependency */,
-				074303F1EDA71055AF39BF0E0DD2D510 /* PBXTargetDependency */,
-				6ED363A240492A69031F485F62100A6A /* PBXTargetDependency */,
-				85D4D78E5B89CCAD48741E039F94C2CB /* PBXTargetDependency */,
-				5DFB6B3E0A3C0BEC236B484C1EBBAC54 /* PBXTargetDependency */,
+				3300677C123B0E494AD356EDE03E7A5A /* PBXTargetDependency */,
+				F79CF50D9085B04EFBAA88DBACF0EF95 /* PBXTargetDependency */,
+				6C4B14CC280FB89AF33C4ACDE87B73E0 /* PBXTargetDependency */,
+				0E70BC473576EC2F5E021D7317AD2203 /* PBXTargetDependency */,
+				1A28A9DDBA20E3AA5FE8CDB48C02C9CA /* PBXTargetDependency */,
 			);
 			name = "Pods-SignalR";
 			productName = Pods_SignalR;
@@ -866,13 +869,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4066D3FFAE721E4FE59E248721BDF5A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6416B516C173815F2032078552EFA6CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,14 +876,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72B2C38A8496669E0C9761DA86464FB3 /* Resources */ = {
+		AC30B0C7869654AF6672ACFC03620F3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC30B0C7869654AF6672ACFC03620F3E /* Resources */ = {
+		B9CDE2745D79825127D073DDE6775951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C048166248E689E522D02A4ABFC1DF40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -923,15 +926,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		237B183CA57757269271BD0CAF72808D /* Sources */ = {
+		0C5ABE9B57BA69F824441D4EB988723B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				810F7C3851479448D430B112CFC71CE2 /* Compression.swift in Sources */,
-				1733AF3675D669BBCC34283542DD8C1D /* SSLClientCertificate.swift in Sources */,
-				C3047C4776571805749F23E9E6D4EA5A /* SSLSecurity.swift in Sources */,
-				5970B574C097B1AB32DEE4844A8C5D42 /* Starscream-dummy.m in Sources */,
-				0306880E008EF05443D1D97E2C76FEB8 /* WebSocket.swift in Sources */,
+				4F157E3B2220BEB4E0CED1FA1D837F8D /* Compression.swift in Sources */,
+				BDA5BD17660723482C0DC797C0285BBE /* SSLClientCertificate.swift in Sources */,
+				1C70F94532FDDA67E0137D45448A72D7 /* SSLSecurity.swift in Sources */,
+				1CBCCEEEEBECA6D9AACBA6EE5D6E1638 /* Starscream-dummy.m in Sources */,
+				ACE48589B8B47838732E882A896C2DEB /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1012,95 +1015,96 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5D1161AF4D71CB8065CD5DB5FE716D1 /* Sources */ = {
+		C5F16C9FE53F0C6BAA1418129DA80343 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDEA2B1F2F17B2565276D1129BA5DAD1 /* CodableHelpers.swift in Sources */,
-				8FCC65DB5D2A915A95BB598FBB665973 /* Connection.swift in Sources */,
-				42ECF68DBE821129D94A3C8E0E8F816D /* ConnectionDelegate.swift in Sources */,
-				87B512B8471DD5E848F67D363C905CC1 /* DefaultHttpClient.swift in Sources */,
-				563BF89165C2840EDC4588BE42118177 /* DefaultTransportFactory.swift in Sources */,
-				94AFE704E64BB1A3B4EC16F9B146AFC0 /* HandshakeProtocol.swift in Sources */,
-				AF055D404C2CC92E73747D1F514B208E /* HttpClientProtocol.swift in Sources */,
-				8DA179FBE981F9231E7BF125CE350F2B /* HttpConnection.swift in Sources */,
-				FB2F3019F0E43C2D4328E20B2AC99C5A /* HttpConnectionOptions.swift in Sources */,
-				32DC2CB144011FC5953744124A5B3579 /* HttpResponse.swift in Sources */,
-				2A04AD140141FE7F6A2DF7C4A7474B31 /* HubConnection.swift in Sources */,
-				B2415F9A5A3BEEB50FA7C2847932A38A /* HubConnectionBuilder.swift in Sources */,
-				0421C3AC6198795C25183A8B4D1776C9 /* HubConnectionDelegate.swift in Sources */,
-				1665A9395C61E647D9F64C0C436F0281 /* HubConnectionExtensions.swift in Sources */,
-				ADD1552E3987F6DB6EBE2C7F727DCEA8 /* HubConnectionOptions.swift in Sources */,
-				C3319908A9E2E7C974F9A70653C4CCE6 /* HubProtocol.swift in Sources */,
-				34D6F8836DCAC6EE733E3FB7940EC40C /* JSONHubProtocol.swift in Sources */,
-				6DDA349155339DED117306075DE96FBD /* Logger.swift in Sources */,
-				8A7B6FE621513A29B877ACA643011F92 /* LongPollingTransport.swift in Sources */,
-				916B5B4A34DA1DBB40F8FC173B98866E /* NegotiationResponse.swift in Sources */,
-				BC9E3ADFC2F851CD1075F5DE0855E1FC /* ReconnectableConnection.swift in Sources */,
-				E89DAC42CB9D900368060ED466DCC4B2 /* ReconnectPolicy.swift in Sources */,
-				97E3368B54D18230FBBC68F25D99A61A /* ServerInvocationHandler.swift in Sources */,
-				4A181C92E9191CCB01DC052D3C7EC1FC /* SignalRError.swift in Sources */,
-				0C079C29DD499F4FD2F0DEDF2DFAD281 /* StreamHandle.swift in Sources */,
-				69153567051DAC54546193359AF1ED24 /* SwiftSignalRClient-dummy.m in Sources */,
-				B6DDF026F073B5A50CF465B6E4C25991 /* TransferFormat.swift in Sources */,
-				449620A011D4E95E508B36B68FF80C59 /* Transport.swift in Sources */,
-				E13CCCFCA38CB51B76D8AB5ECCFADAEC /* TransportDelegate.swift in Sources */,
-				13663751683E0E3DB2F4D39DF93C03DE /* TransportType.swift in Sources */,
-				EC8E5AA010AC48C6DEC748295E5A30F7 /* WebsocketsTransport.swift in Sources */,
+				50052A4E8299738823D5058977CAADD2 /* CodableHelpers.swift in Sources */,
+				BD0D9F316D547810B124446E03B9C4CF /* Connection.swift in Sources */,
+				44F04E9FC8D94045D60FB3EC1B17AE3F /* ConnectionDelegate.swift in Sources */,
+				1C7D296F1C4EDD8D177AEFAEFB720212 /* DefaultHttpClient.swift in Sources */,
+				6ABA53E95929DB4FE8BEB697CA9BC57E /* DefaultTransportFactory.swift in Sources */,
+				45CBAE050D545A447E4A148C4C36831D /* HandshakeProtocol.swift in Sources */,
+				C585B996F23A18A9F826FDA30D4B9D52 /* HttpClientProtocol.swift in Sources */,
+				B979264644E27C3D966397949F37EC81 /* HttpConnection.swift in Sources */,
+				4FCDDAA7DA29DC9F3E0B0D61ED857D30 /* HttpConnectionOptions.swift in Sources */,
+				3DB4D4F7A17A1F9127C21D50AFFB4BE1 /* HttpResponse.swift in Sources */,
+				F4FA7AC35F14C27718F443B92C858563 /* HubConnection.swift in Sources */,
+				309BB98214558EDE7306AD17F8372CEF /* HubConnectionBuilder.swift in Sources */,
+				C2262A192525DE4FD3326F093C0341C0 /* HubConnectionDelegate.swift in Sources */,
+				AF0E518C4C089C34E23CCF2CFBD0D1F7 /* HubConnectionExtensions.swift in Sources */,
+				DFC7B7525F1C96BABFF1CFE8EBA12AB8 /* HubProtocol.swift in Sources */,
+				12CD1675AA61E0CBB97AB715ACF57C6F /* JSONHubProtocol.swift in Sources */,
+				84B9C71D26472D509B4D25D943ED6332 /* Logger.swift in Sources */,
+				E810AA8A73730BF669095B73C564EA99 /* LongPollingTransport.swift in Sources */,
+				AF46E2F3DF8DFB0F22D41B1C37A60316 /* NegotiationResponse.swift in Sources */,
+				8D848435AFD4249DC491B00C575A5848 /* ReconnectableConnection.swift in Sources */,
+				65BEBCE655F4768D2AF16AF3A34940D5 /* ReconnectPolicy.swift in Sources */,
+				1BD8E282A67C963F39B71BE29C8610D8 /* ServerInvocationHandler.swift in Sources */,
+				DF2ABE58BEEBB65852AF1C1F488F0E47 /* SignalRError.swift in Sources */,
+				9D8A54DEE1C208454B56D2DF721C4350 /* StreamHandle.swift in Sources */,
+				549C6B4F4C04892B1581E3DCE17D134A /* SwiftSignalRClient-dummy.m in Sources */,
+				B30DA5B97F402C140861CFED109ED758 /* TransferFormat.swift in Sources */,
+				A5C8AF362AAF9C56F4C71472A48E3235 /* Transport.swift in Sources */,
+				9FC7203CFE92C9FDE7ABBB255293D7C2 /* TransportDelegate.swift in Sources */,
+				0843B2DA62CBDC162CE16698E0E7B8F8 /* TransportType.swift in Sources */,
+				1E4838A05F7B64611A5AA1B759FBBDBE /* Util.swift in Sources */,
+				C563C3CAEAACBD22A8F761A39D1EB0FF /* WebSocket.swift in Sources */,
+				615A562BAE9DB15253A10BB416F310A0 /* WebsocketsTransport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		074303F1EDA71055AF39BF0E0DD2D510 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SignalRSwift;
-			target = 1E6C4045913212CD35E82B99586FC32D /* SignalRSwift */;
-			targetProxy = 536CF0487A1CA25167D4CE1F9E1BAA48 /* PBXContainerItemProxy */;
-		};
-		5250E00B1D21CB6C9BEABB9C785D644F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Starscream;
-			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = 287271BDDAB0A8A9113486563D05C2D4 /* PBXContainerItemProxy */;
-		};
-		5DFB6B3E0A3C0BEC236B484C1EBBAC54 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSignalRClient;
-			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
-			targetProxy = 5485B0D69F91524287D6A73541337FC5 /* PBXContainerItemProxy */;
-		};
-		6ED363A240492A69031F485F62100A6A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Starscream;
-			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = BE68F832793446D7B425A7DCF8E8C849 /* PBXContainerItemProxy */;
-		};
-		85D4D78E5B89CCAD48741E039F94C2CB /* PBXTargetDependency */ = {
+		0E70BC473576EC2F5E021D7317AD2203 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftR;
 			target = E242525A17C06AAB71CFB6A089530E6F /* SwiftR */;
-			targetProxy = A2042DFE7F6A7F42AD51DA1936E6BF7C /* PBXContainerItemProxy */;
+			targetProxy = 2CE78B65848BB574B7026486CC77EEC9 /* PBXContainerItemProxy */;
 		};
-		ABECD45A07C97946518D8A8FECA9B133 /* PBXTargetDependency */ = {
+		1A28A9DDBA20E3AA5FE8CDB48C02C9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSignalRClient;
+			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
+			targetProxy = 468C7FA76224809B1C3074BEDAA4BA1E /* PBXContainerItemProxy */;
+		};
+		3300677C123B0E494AD356EDE03E7A5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = D87849FC17BE9CA9DB6A866BEFB3D036 /* PBXContainerItemProxy */;
+			targetProxy = A511A4F394010E21C17985685CBF8633 /* PBXContainerItemProxy */;
 		};
-		F18F7D581BF4E246A11B31624DFDF43A /* PBXTargetDependency */ = {
+		401AC536CBF99F757791FF61CDEDDF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = CCE84F4B0237DACB75E68C379290372B /* PBXContainerItemProxy */;
+		};
+		6C4B14CC280FB89AF33C4ACDE87B73E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = A588D4C1BCA4228221EB0833734ADF21 /* PBXContainerItemProxy */;
+		};
+		D1CC033DBB3B5C310FC45A36C82ABC4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 74ECB79DBEF54581CBC6EE6C383A57CF /* PBXContainerItemProxy */;
+			targetProxy = 1EF5F4AC6CE8701B39B7E587971D70EF /* PBXContainerItemProxy */;
+		};
+		F79CF50D9085B04EFBAA88DBACF0EF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SignalRSwift;
+			target = 1E6C4045913212CD35E82B99586FC32D /* SignalRSwift */;
+			targetProxy = D1BC735A029F3CB2CDF23FDB28155294 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3708281409B1EFDAED4C2FC707E06081 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FADB2DE2A37F689AE7073AD1EF27138 /* SignalRSwift.debug.xcconfig */;
+			baseConfigurationReference = 4DBD1057294AFEF118D2036EC9698C72 /* SignalRSwift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1170,44 +1174,9 @@
 			};
 			name = Release;
 		};
-		434BF29087C78A1BDC9DC610C7C6923D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C7AFB81CCC99A2444B1E721D12E2663 /* Starscream.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		47346F000BB1151A7DA85085765FB612 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DFD38293DA01B6EDFF9E62FC2B02991 /* SignalRSwift.release.xcconfig */;
+			baseConfigurationReference = E82307D0E2417D99B0F42BE239E30D6D /* SignalRSwift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1277,9 +1246,9 @@
 			};
 			name = Debug;
 		};
-		6353C1985D3DB1CD8B9FF7C7F051A44A /* Debug */ = {
+		5AA72A3EDF1FC535E13989AAFFDBA139 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F215A0501A75C9E386E3F553DC9D5B1 /* Starscream.debug.xcconfig */;
+			baseConfigurationReference = 2787DF2FBBE9E86B49D480A1E8823355 /* Starscream.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1306,14 +1275,15 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		68B1AE02C35B3BF9B0A358B7D7F26055 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F8046E903A39A57EF2D6F61EBC2916 /* Alamofire.release.xcconfig */;
+			baseConfigurationReference = 1AF238402D4D9BCC5853F45454996432 /* Alamofire.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1345,6 +1315,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		7F05A0D9FE30F8627F795F0C53775DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3207878304A58FA6D68CDCEF74E21CEE /* SwiftSignalRClient.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSignalRClient;
+				PRODUCT_NAME = SwiftSignalRClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1474,9 +1478,9 @@
 			};
 			name = Release;
 		};
-		A6AEE8281D734B9A507461E568F17DD1 /* Release */ = {
+		A635A2DF881D7AF7605180E044FF0BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20FB0BC7043C49ED5C1DD36447B23FBE /* SwiftSignalRClient.release.xcconfig */;
+			baseConfigurationReference = 9ADD006AA373F91369D9A49435362B9C /* SwiftSignalRClient.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1511,7 +1515,7 @@
 		};
 		CA22C334E2940B21EB576035F44AD294 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0B916EE308CF01E8950E5F9A3251477 /* Alamofire.debug.xcconfig */;
+			baseConfigurationReference = 9DD808E3FE4D610E8940947D68F883A8 /* Alamofire.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1543,9 +1547,43 @@
 			};
 			name = Debug;
 		};
+		D316D50157159275C70B80C9BE969614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D56DA2110E5B49357127D611BB38789 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D61B9AA1997707FAD57132077DCD0CE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13467BFDB5B5A5714C2AC26B01E86D36 /* SwiftR.release.xcconfig */;
+			baseConfigurationReference = 593BF2BFB27EA304AE6CC1EAD7EBF01F /* SwiftR.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1578,43 +1616,9 @@
 			};
 			name = Release;
 		};
-		F0660E71D47A0E06977DC6D27FD8CFBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38FEC27DB5471910D7F6442CB4E12216 /* SwiftSignalRClient.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSignalRClient;
-				PRODUCT_NAME = SwiftSignalRClient;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F88ED5E59D9501DE76ABDE833F1D6155 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A1A4D397B5BA04C8B2F57DDBCC987B6 /* SwiftR.debug.xcconfig */;
+			baseConfigurationReference = A0DCAA02F3BAC9B9F9177F83B7408494 /* SwiftR.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1649,15 +1653,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25F66423154A2F832D50D7D0B9BE4286 /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0660E71D47A0E06977DC6D27FD8CFBA /* Debug */,
-				A6AEE8281D734B9A507461E568F17DD1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		42F5B1F239FE591228B774EB0A7EE42A /* Build configuration list for PBXNativeTarget "Pods-SignalR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1685,15 +1680,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B5CD05B74706A4DAFCFC8F330BD1A87 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6353C1985D3DB1CD8B9FF7C7F051A44A /* Debug */,
-				434BF29087C78A1BDC9DC610C7C6923D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		887CAE7F79D14F7AF2714DC8BABA9E38 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1708,6 +1694,24 @@
 			buildConfigurations = (
 				F88ED5E59D9501DE76ABDE833F1D6155 /* Debug */,
 				D61B9AA1997707FAD57132077DCD0CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BF0C9FD1582489E5DF418C586E16E5 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D316D50157159275C70B80C9BE969614 /* Debug */,
+				5AA72A3EDF1FC535E13989AAFFDBA139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA67557D692C0128BCE13E8C80E1529F /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F05A0D9FE30F8627F795F0C53775DB7 /* Debug */,
+				A635A2DF881D7AF7605180E044FF0BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

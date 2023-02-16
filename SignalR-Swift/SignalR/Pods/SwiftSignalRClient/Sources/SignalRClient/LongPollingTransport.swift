@@ -20,9 +20,8 @@ public class LongPollingTransport: Transport {
     private var httpClient: HttpClientProtocol?
     private var url: URL?
     private var closeError: Error?
-
-    public let inherentKeepAlive = true
-
+    
+    
     init(logger: Logger) {
         self.logger = logger
     }

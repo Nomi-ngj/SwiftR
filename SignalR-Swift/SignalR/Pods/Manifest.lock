@@ -5,10 +5,10 @@ PODS:
     - Starscream (~> 3.0)
   - Starscream (3.1.1)
   - SwiftR (0.14.0)
-  - SwiftSignalRClient (0.9.1)
+  - SwiftSignalRClient (0.8.0)
 
 DEPENDENCIES:
-  - SignalRSwift (= 2.0.3)
+  - SignalRSwift
   - SwiftR
   - SwiftSignalRClient
 
@@ -25,8 +25,8 @@ SPEC CHECKSUMS:
   SignalRSwift: 6f30893680780d4f4e9981795478ea43f5b63f3e
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftR: 38aa6ed938f1a57ae030ed99e15455d58e008615
-  SwiftSignalRClient: df3a307ef99d4c63392e96786e65035da50652bb
+  SwiftSignalRClient: fcdfa9141dd191b5c219df87adbfc58f6f1f5554
 
-PODFILE CHECKSUM: 7195ec2387b8d603b057c833e2a5e108c23ba560
+PODFILE CHECKSUM: 79aa8d5c508d633ddd719a98cecdb32d7a88ffb0
 
 COCOAPODS: 1.11.3
